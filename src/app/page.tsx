@@ -79,57 +79,57 @@ const TelegramIcon = () => (
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 max-w-screen-2xl items-center">
-          <div className="mr-4 flex md:flex-1">
-            <Link href="/" className="mr-6 flex items-center space-x-2">
+    <div className="flex min-h-screen flex-col bg-black">
+      <header className="absolute top-0 z-50 w-full bg-black">
+        <div className="container mx-auto flex h-24 max-w-screen-2xl items-center justify-between">
+          <div className="flex">
+            <Link href="/" className="flex items-center space-x-2">
               <Logo />
             </Link>
           </div>
-          <div className="flex flex-1 items-center justify-end space-x-2">
+          <div className="flex items-center justify-end space-x-4">
             <Button
               variant="default"
-              className="rounded-full bg-gradient-to-r from-primary to-yellow-400 text-primary-foreground shadow-lg transition-transform hover:scale-105"
+              className="rounded-lg bg-gradient-to-b from-yellow-400 to-amber-600 px-8 py-3 text-sm font-bold text-black shadow-lg transition-transform hover:scale-105"
               asChild
             >
-              <Link href="https://terminal.sahasraalgo.com/">Login</Link>
+              <Link href="https://terminal.sahasraalgo.com/">LOGIN</Link>
             </Button>
           </div>
         </div>
       </header>
 
       <main className="flex-1">
-        <section className="relative w-full py-20 md:py-32 lg:py-40">
-          <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background opacity-50"></div>
-          <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 text-center md:grid-cols-2 md:gap-16 md:px-6 md:text-left">
-            <div className="relative z-10 animate-fade-in-up">
-              <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+        <section className="relative w-full overflow-hidden bg-black pb-20 pt-40 md:pb-32 md:pt-48 lg:pb-40 lg:pt-56">
+          <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
+            <div className="relative z-10 animate-fade-in-up text-center md:text-left">
+              <h1 className="font-headline text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
                 Best Algo Trading Platform for Traders
               </h1>
-              <p className="mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
+              <p className="mx-auto mt-6 max-w-2xl text-lg text-neutral-300 md:mx-0 md:text-xl">
                 "AI-powered trading made easy: faster execution, smarter decisions, better returns."
               </p>
               <div className="mt-10 flex justify-center gap-4 md:justify-start">
                 <Button
                   size="lg"
                   asChild
-                  className="rounded-full bg-gradient-to-r from-primary to-yellow-400 text-primary-foreground shadow-lg transition-transform hover:scale-105"
+                  className="rounded-lg bg-gradient-to-b from-yellow-400 to-amber-600 px-8 py-4 text-base font-bold text-black shadow-lg transition-transform hover:scale-105"
                 >
                   <Link href="https://terminal.sahasraalgo.com/">
-                    Get Started <ArrowRight className="ml-2 h-5 w-5" />
+                    SIGN UP <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto h-[300px] w-[300px] md:h-[450px] md:w-[450px] lg:h-[500px] lg:w-[500px]">
+            <div className="relative mx-auto h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px]">
+              <div className="absolute inset-[-50px] rounded-full bg-yellow-500/30 blur-[100px]" />
               {heroPlaceholder && (
                 <Image
                   src={heroPlaceholder.imageUrl}
                   alt={heroPlaceholder.description}
                   fill
                   priority
-                  className="rounded-lg object-cover shadow-[0_0_100px] shadow-primary/40"
+                  className="z-10 rounded-lg object-cover"
                   data-ai-hint={heroPlaceholder.imageHint}
                 />
               )}
