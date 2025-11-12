@@ -120,6 +120,14 @@ export default {
         'float-slow': {
           '0%, 100%': { transform: 'translateY(50%) translateX(-50%)' },
           '50%': { transform: 'translateY(calc(50% - 25px)) translateX(-50%)' },
+        },
+        'float-very-slow': {
+          '0%, 100%': { transform: 'translateY(50%)' },
+          '50%': { transform: 'translateY(calc(50% - 40px))' },
+        },
+        'float-very-slow-reverse': {
+          '0%, 100%': { transform: 'translateY(0%)' },
+          '50%': { transform: 'translateY(calc(0% + 40px))' },
         }
       },
       animation: {
@@ -131,6 +139,8 @@ export default {
         'move-box-2': 'move-box 3s ease-in-out infinite 0.5s',
         'float': 'float 4s ease-in-out infinite',
         'float-slow': 'float-slow 5s ease-in-out infinite',
+        'float-very-slow': 'float-very-slow 6s ease-in-out infinite',
+        'float-very-slow-reverse': 'float-very-slow-reverse 6s ease-in-out infinite',
       },
     },
   },
