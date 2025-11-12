@@ -2,14 +2,14 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import './globals.css';
-import { Inter, Montserrat } from 'next/font/google';
+import { Inter, Oswald } from 'next/font/google';
 
 const inter = Inter({
   subsets: ['latin'],
   variable: '--font-body',
 });
 
-const montserrat = Montserrat({
+const oswald = Oswald({
   subsets: ['latin'],
   variable: '--font-headline',
 });
@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${montserrat.variable}`}
+      className={`${inter.variable} ${oswald.variable}`}
       suppressHydrationWarning
     >
       <body className={cn('font-body antialiased bg-black text-white')}>
