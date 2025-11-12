@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Logo from '@/components/logo';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, Bot, Phone, Wifi } from 'lucide-react';
 
 const heroPlaceholder = PlaceHolderImages.find((img) => img.id === 'hero-chart');
 const automatedTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'automated-trade');
@@ -103,7 +103,7 @@ export default function Home() {
         <section className="relative w-full overflow-hidden bg-black pt-12 pb-20 md:pb-32 lg:pb-40">
           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
             <div className="relative z-10 animate-fade-in-up text-center md:text-left">
-              <h1 className="font-headline text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-6xl">
+              <h1 className="font-headline text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl">
                 Best Algo Trading <br />
                 Platform for <br />
                 Traders
@@ -137,6 +137,19 @@ export default function Home() {
               )}
                <div className="absolute top-1/4 left-1/4 h-24 w-16 -translate-x-1/2 -translate-y-1/2 animate-move-box-1 rounded-lg bg-white/10 backdrop-blur-sm"></div>
               <div className="absolute bottom-1/4 right-1/4 h-24 w-16 translate-x-1/2 translate-y-1/2 animate-move-box-2 rounded-lg bg-white/10 backdrop-blur-sm"></div>
+              <div className="absolute z-20 bottom-8 left-1/2 -translate-x-1/2 w-4/5 animate-fade-in-up">
+                <div className="flex items-center gap-3 rounded-lg bg-black/50 p-3 backdrop-blur-md">
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/20">
+                    <Wifi className="h-5 w-5 text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <p className="font-bold text-white">Sahasra Algo</p>
+                  </div>
+                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-blue-600">
+                    <Bot className="h-5 w-5 text-white" />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
