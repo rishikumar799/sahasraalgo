@@ -59,7 +59,7 @@ const InstagramIcon = () => (
   </svg>
 );
 
-const TelegramIcon = () => (
+const WhatsAppIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
@@ -70,12 +70,13 @@ const TelegramIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="h-8 w-8 text-sky-500 transition-transform hover:scale-110"
+    className="h-8 w-8 text-green-500 transition-transform hover:scale-110"
   >
-    <path d="m22 2-7 20-4-9-9-4Z" fill="#0088cc" strokeWidth={0} />
-    <path d="M22 2 11 13" strokeWidth={1} stroke="white" />
+    <path d="M21 12.9_C21 15.1 20 17 18.5 18.5_C17 20 15.1 21 12.9 21_C10.7 21 8.80001 20 7.30001 18.5_C5.80001 17 4.80001 15.1 4.80001 12.9_C4.80001 8.5 8.30001 5 12.9 5_C17.5 5 21 8.5 21 12.9_Z" fill="#25D366" strokeWidth={0} />
+    <path d="M16.4 14.8_C16.1 15.5 15.3 16 14.5 16_C13.8 16 13.1 15.8 12.5 15.3_C11.9 14.8 11.1 14.1 10.3 13.2_C9.50001 12.3 8.80001 11.5 8.30001 10.9_C7.80001 10.3 7.60001 9.6 7.60001 8.9_C7.60001 8.2 8.10001 7.4 8.70001 7.1_C8.80001 7.1 8.90001 7 9.10001 7_H9.30001_C9.50001 7 9.60001 7.1 9.80001 7.3_L10.7 8.7_C10.8 8.8 10.9 9 10.9 9.2_C10.9 9.4 10.8 9.6 10.6 9.8_L10.1 10.3_C10 10.4 9.90001 10.5 9.90001 10.7_C9.90001 10.9 10 11 10.1 11.2_C10.3 11.5 10.7 12 11.2 12.5_C11.7 13 12.2 13.4 12.5 13.6_C12.7 13.7 12.8 13.8 13 13.8_C13.2 13.8 13.3 13.7 13.4 13.6_L13.9 13.1_C14.1 12.9 14.3 12.8 14.5 12.8_C14.7 12.8 14.9 12.9 15 13.1_L16.4 14.1_C16.6 14.2 16.7 14.4 16.7 14.6_C16.7 14.7 16.6 14.8 16.4 14.8_Z" fill="white" strokeWidth={0} />
   </svg>
 );
+
 
 export default function Home() {
   return (
@@ -155,7 +156,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="absolute z-20 -top-8 -left-16 w-max animate-float-very-slow hidden lg:block">
+              <div className="absolute z-20 -top-8 -left-16 w-max animate-pulse-slow hidden lg:block">
                 <div className="relative flex h-24 w-24 items-center justify-center">
                   <Star className="absolute h-full w-full text-yellow-400" fill="currentColor" />
                   <p className="relative z-10 text-center text-xs font-bold text-black">
@@ -323,13 +324,13 @@ export default function Home() {
                       </Button>
 
                       <div className="mt-10 flex items-center justify-center gap-6 md:justify-start">
-                        <Link href="#" aria-label="Instagram" className="transition-transform hover:scale-110">
+                        <Link href="https://www.instagram.com/sahasra_trading?igsh=MTljOGpxZThoNWxxZg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                           <InstagramIcon />
                         </Link>
-                        <Link href="#" aria-label="Telegram" className="transition-transform hover:scale-110">
-                          <TelegramIcon />
+                        <Link href="https://wa.me/919121004729" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                          <WhatsAppIcon />
                         </Link>
-                        <Link href="#" aria-label="YouTube" className="flex items-center gap-1 transition-transform hover:scale-110">
+                        <Link href="https://youtube.com/@sahasra-atradingcommunity824?si=cBxvuhXun9YnEk-g" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                           <YouTubeIcon />
                         </Link>
                       </div>
