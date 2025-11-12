@@ -7,22 +7,28 @@
       "imageHint": "stock chart"
     },
     {
-      "id": "feature-ai",
-      "description": "An abstract representation of artificial intelligence",
-      "imageUrl": "https://images.unsplash.com/photo-1716637644831-e046c73be197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlfGVufDB8fHx8MTc2MjkxNjc2Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "artificial intelligence"
+      "id": "automated-trade",
+      "description": "A person's hands typing on a futuristic/glowing keyboard with charts in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhdXRvbWF0ZWQlMjB0cmFkaW5nfGVufDB8fHx8MTc2Mjk1NTYzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "automated trading"
     },
     {
-      "id": "feature-automation",
-      "description": "An image symbolizing an automated process",
-      "imageUrl": "https://images.unsplash.com/photo-1758269445774-61a540a290a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxhdXRvbWF0aW9uJTIwcHJvY2Vzc3xlbnwwfHx8fDE3NjI5NTUwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "automation process"
+      "id": "strategy",
+      "description": "A person at a desk with multiple screens showing trading charts.",
+      "imageUrl": "https://images.unsplash.com/photo-1651340981821-b519ad14da7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFkaW5nJTIwc3RyYXRlZ3l8ZW58MHx8fHwxNzYyOTU1NjM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "trading strategy"
     },
     {
-      "id": "feature-data",
-      "description": "A chart showing data trends",
-      "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkYXRhJTIwY2hhcnR8ZW58MHx8fHwxNzYyODY3NDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "data chart"
+      "id": "low-latency",
+      "description": "An abstract visualization of a high-speed network or data flow.",
+      "imageUrl": "https://images.unsplash.com/photo-1495592822108-9e6261896da8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjI5NTE3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "data network"
+    },
+    {
+      "id": "paper-auto-trade",
+      "description": "A person analyzing charts and data on paper.",
+      "imageUrl": "https://images.unsplash.com/photo-1723987251277-18fc0a1effd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhbmFseXppbmclMjBjaGFydHN8ZW58MHx8fHwxNzYyODk4MjM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "analyzing charts"
     }
   ]
 }

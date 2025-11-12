@@ -7,6 +7,10 @@ import Logo from '@/components/logo';
 import { ArrowRight } from 'lucide-react';
 
 const heroPlaceholder = PlaceHolderImages.find((img) => img.id === 'hero-chart');
+const automatedTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'automated-trade');
+const strategyPlaceholder = PlaceHolderImages.find((img) => img.id === 'strategy');
+const lowLatencyPlaceholder = PlaceHolderImages.find((img) => img.id === 'low-latency');
+const paperAutoTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'paper-auto-trade');
 
 export default function Home() {
   return (
@@ -91,6 +95,105 @@ export default function Home() {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </section>
+
+        <section id="features" className="w-full bg-background py-20 md:py-28">
+          <div className="container mx-auto space-y-20 px-4 md:px-6">
+            {/* Automated Trade Execution */}
+            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
+              <div>
+                <h2 className="font-headline text-3xl font-bold text-primary">
+                  Automated Trade Execution
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Trades are executed automatically based on predefined rules and algorithms
+                  without manual intervention. This feature eliminates human emotions such as fear
+                  and greed and ensures faster and more accurate trade placement.
+                </p>
+              </div>
+              <div className="relative h-64 w-full md:h-80">
+                {automatedTradePlaceholder && (
+                  <Image
+                    src={automatedTradePlaceholder.imageUrl}
+                    alt={automatedTradePlaceholder.description}
+                    fill
+                    className="rounded-lg object-cover shadow-lg"
+                    data-ai-hint={automatedTradePlaceholder.imageHint}
+                  />
+                )}
+              </div>
+            </div>
+
+            {/* Strategy */}
+            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
+              <div className="relative h-64 w-full md:order-last md:h-80">
+                {strategyPlaceholder && (
+                  <Image
+                    src={strategyPlaceholder.imageUrl}
+                    alt={strategyPlaceholder.description}
+                    fill
+                    className="rounded-lg object-cover shadow-lg"
+                    data-ai-hint={strategyPlaceholder.imageHint}
+                  />
+                )}
+              </div>
+              <div className="md:order-first">
+                <h2 className="font-headline text-3xl font-bold text-primary">Strategy</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Build powerful trading strategies with ready-made plugins or customize your own.
+                  Set dynamic parameters and automate execution for smarter trading.
+                </p>
+              </div>
+            </div>
+
+            {/* Low Latency */}
+            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
+              <div>
+                <h2 className="font-headline text-3xl font-bold text-primary">Low Latency</h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Experience ultra-fast trade execution with low-latency infrastructure that
+                  optimizes order flow through high-speed trading servers for seamless
+                  transactions.
+                </p>
+              </div>
+              <div className="relative h-64 w-full md:h-80">
+                {lowLatencyPlaceholder && (
+                  <Image
+                    src={lowLatencyPlaceholder.imageUrl}
+                    alt={lowLatencyPlaceholder.description}
+                    fill
+                    className="rounded-lg object-cover shadow-lg"
+                    data-ai-hint={lowLatencyPlaceholder.imageHint}
+                  />
+                )}
+              </div>
+            </div>
+
+            {/* Paper Auto Trade */}
+            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
+              <div className="relative h-64 w-full md:order-last md:h-80">
+                {paperAutoTradePlaceholder && (
+                  <Image
+                    src={paperAutoTradePlaceholder.imageUrl}
+                    alt={paperAutoTradePlaceholder.description}
+                    fill
+                    className="rounded-lg object-cover shadow-lg"
+                    data-ai-hint={paperAutoTradePlaceholder.imageHint}
+                  />
+                )}
+              </div>
+              <div className="md:order-first">
+                <h2 className="font-headline text-3xl font-bold text-primary">
+                  Paper Auto Trade
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Practice risk-free with real-market simulations. Trade virtual money in live
+                  market conditions, refine your strategies, and gain confidence before real
+                  investments.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
