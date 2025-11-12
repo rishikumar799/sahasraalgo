@@ -116,6 +116,10 @@ export default {
         'float': {
           '0%, 100%': { transform: 'translateY(0) translateX(-50%)' },
           '50%': { transform: 'translateY(-15px) translateX(-50%)' },
+        },
+        'float-slow': {
+          '0%, 100%': { transform: 'translateY(0) translateY(-50%)' },
+          '50%': { transform: 'translateY(-15px) translateY(-50%)' },
         }
       },
       animation: {
@@ -125,7 +129,8 @@ export default {
         'pulse-slow': 'pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'move-box-1': 'move-box 3s ease-in-out infinite',
         'move-box-2': 'move-box 3s ease-in-out infinite 0.5s',
-        'float': 'float 3s ease-in-out infinite',
+        'float': 'float 4s ease-in-out infinite',
+        'float-slow': 'float-slow 5s ease-in-out infinite',
       },
     },
   },
