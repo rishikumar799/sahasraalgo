@@ -127,7 +127,7 @@ export default function Home() {
 
             {/* Strategy */}
             <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
-              <div className="relative h-64 w-full md:order-last md:h-80">
+              <div className="relative h-64 w-full md:h-80">
                 {strategyPlaceholder && (
                   <Image
                     src={strategyPlaceholder.imageUrl}
@@ -138,7 +138,7 @@ export default function Home() {
                   />
                 )}
               </div>
-              <div className="md:order-first">
+              <div>
                 <h2 className="font-headline text-3xl font-bold text-primary">Strategy</h2>
                 <p className="mt-4 text-lg text-muted-foreground">
                   Build powerful trading strategies with ready-made plugins or customize your own.
