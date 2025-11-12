@@ -2,17 +2,17 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import './globals.css';
-import { Roboto, Oswald } from 'next/font/google';
+import { Open_Sans, Montserrat } from 'next/font/google';
 
-const roboto = Roboto({
+const openSans = Open_Sans({
   subsets: ['latin'],
   variable: '--font-body',
-  weight: ['400', '500', '700'],
 });
 
-const oswald = Oswald({
+const montserrat = Montserrat({
   subsets: ['latin'],
   variable: '--font-headline',
+  weight: ['400', '700'],
 });
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${roboto.variable} ${oswald.variable}`}
+      className={`${openSans.variable} ${montserrat.variable}`}
       suppressHydrationWarning
     >
       <body className={cn('font-body antialiased bg-black text-white')}>
