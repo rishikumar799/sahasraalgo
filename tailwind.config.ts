@@ -118,8 +118,8 @@ export default {
           '50%': { transform: 'translateY(-15px) translateX(-50%)' },
         },
         'float-slow': {
-          '0%, 100%': { transform: 'translateY(0) translateY(-50%)' },
-          '50%': { transform: 'translateY(-15px) translateY(-50%)' },
+          '0%, 100%': { transform: 'translateY(50%)' },
+          '50%': { transform: 'translateY(calc(50% - 15px))' },
         }
       },
       animation: {
