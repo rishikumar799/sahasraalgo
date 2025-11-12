@@ -80,7 +80,7 @@ const TelegramIcon = () => (
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-black">
-      <header className="absolute top-0 z-50 w-full bg-black">
+      <header className="sticky top-0 z-50 w-full bg-black">
         <div className="container mx-auto flex h-24 max-w-screen-2xl items-center justify-between">
           <div className="flex">
             <Link href="/" className="flex items-center space-x-2">
