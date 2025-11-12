@@ -81,7 +81,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-black">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black/50 backdrop-blur-lg">
-        <div className="container mx-auto flex h-16 max-w-screen-2xl items-center justify-between">
+        <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between">
           <div className="flex">
             <Link href="/" className="flex items-center space-x-2">
               <Logo />
@@ -103,7 +103,7 @@ export default function Home() {
         <section className="relative w-full overflow-hidden bg-black pt-12 pb-20 md:pb-32 lg:pb-40">
           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
             <div className="relative z-10 animate-fade-in-up text-center md:text-left">
-              <h1 className="font-headline text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
+              <h1 className="font-headline text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
                 Best Algo Trading <br />
                 Platform for <br />
                 Traders
@@ -124,14 +124,14 @@ export default function Home() {
               </div>
             </div>
             <div className="relative mx-auto h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px]">
-              <div className="absolute inset-[-50px] rounded-full bg-yellow-500/20 blur-[120px]" />
+              <div className="absolute inset-[-100px] rounded-full bg-yellow-500/30 blur-[120px] animate-pulse-slow" />
               {heroPlaceholder && (
                 <Image
                   src={heroPlaceholder.imageUrl}
                   alt={heroPlaceholder.description}
                   fill
                   priority
-                  className="z-10 rounded-lg object-cover"
+                  className="z-10 rounded-lg object-cover transition-transform duration-300 hover:scale-105"
                   data-ai-hint={heroPlaceholder.imageHint}
                 />
               )}
