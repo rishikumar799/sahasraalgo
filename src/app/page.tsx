@@ -103,7 +103,7 @@ export default function Home() {
         <section className="relative w-full overflow-hidden bg-black pt-12 pb-20 md:pb-32 lg:pb-40">
           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
             <div className="relative z-10 animate-fade-in-up text-center md:text-left">
-              <h1 className="font-headline text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
+              <h1 className="font-headline text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 Best Algo Trading <br />
                 Platform for <br />
                 Traders
