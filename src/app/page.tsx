@@ -168,7 +168,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="features" className="w-full bg-background py-24 md:py-32">
+        <section id="features" className="w-full bg-black py-24 md:py-32">
           <div className="container mx-auto space-y-28 px-4 md:px-6">
             {/* Automated Trade Execution */}
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
@@ -176,7 +176,7 @@ export default function Home() {
                 <h2 className="font-headline text-4xl font-bold text-primary">
                   Automated Trade Execution
                 </h2>
-                <p className="mt-6 text-lg text-muted-foreground">
+                <p className="mt-6 text-lg text-white">
                   Trades are executed automatically based on predefined rules and algorithms
                   without manual intervention. This feature eliminates human emotions such as fear
                   and greed and ensures faster and more accurate trade placement.
@@ -210,7 +210,7 @@ export default function Home() {
               </div>
               <div className="order-first md:order-last">
                 <h2 className="font-headline text-4xl font-bold text-primary">Strategy</h2>
-                <p className="mt-6 text-lg text-muted-foreground">
+                <p className="mt-6 text-lg text-white">
                   Build powerful trading strategies with ready-made plugins or customize your own.
                   Set dynamic parameters and automate execution for smarter trading.
                 </p>
@@ -221,7 +221,7 @@ export default function Home() {
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
               <div>
                 <h2 className="font-headline text-4xl font-bold text-primary">Low Latency</h2>
-                <p className="mt-6 text-lg text-muted-foreground">
+                <p className="mt-6 text-lg text-white">
                   Experience ultra-fast trade execution with low-latency infrastructure that
                   optimizes order flow through high-speed trading servers for seamless
                   transactions.
@@ -257,7 +257,7 @@ export default function Home() {
                 <h2 className="font-headline text-4xl font-bold text-primary">
                   Paper Auto Trade
                 </h2>
-                <p className="mt-6 text-lg text-muted-foreground">
+                <p className="mt-6 text-lg text-white">
                   Practice risk-free with real-market simulations. Trade virtual money in live
                   market conditions, refine your strategies, and gain confidence before real
                   investments.
