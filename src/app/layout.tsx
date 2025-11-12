@@ -2,12 +2,12 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import './globals.css';
-import { Poppins, Playfair_Display } from 'next/font/google';
+import { Merriweather, Playfair_Display } from 'next/font/google';
 
-const poppins = Poppins({
+const merriweather = Merriweather({
   subsets: ['latin'],
   variable: '--font-body',
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '700'],
 });
 
 const playfairDisplay = Playfair_Display({
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${poppins.variable} ${playfairDisplay.variable}`}
+      className={`${merriweather.variable} ${playfairDisplay.variable}`}
       suppressHydrationWarning
     >
       <body className={cn('font-body antialiased bg-black text-white')}>
