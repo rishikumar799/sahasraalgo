@@ -43,7 +43,7 @@ export default function Home() {
                 Best Algo Trading Platform for Traders
               </h1>
               <p className="mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
-                &quot;AI-powered trading made easy: faster execution, smarter decisions, better returns.&quot;
+                "AI-powered trading made easy: faster execution, smarter decisions, better returns."
               </p>
               <div className="mt-8 flex justify-center gap-4 md:justify-start">
                 <Button
