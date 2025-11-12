@@ -103,7 +103,7 @@ export default function Home() {
         <section className="relative w-full overflow-hidden bg-black pt-12 pb-20 md:pb-32 lg:pb-40">
           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
             <div className="relative z-10 animate-fade-in-up text-center md:text-left">
-              <h1 className="font-headline text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+              <h1 className="font-headline text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-5xl">
                 Best Algo Trading <br />
                 Platform for <br />
                 Traders
@@ -124,7 +124,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative mx-auto h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px]">
-              <div className="absolute inset-[-100px] rounded-full bg-yellow-500/30 blur-[120px] animate-pulse-slow" />
+              <div className="absolute inset-[-150px] rounded-full bg-yellow-500/30 blur-[120px] animate-pulse-slow" />
               {heroPlaceholder && (
                 <Image
                   src={heroPlaceholder.imageUrl}
@@ -135,6 +135,8 @@ export default function Home() {
                   data-ai-hint={heroPlaceholder.imageHint}
                 />
               )}
+               <div className="absolute top-1/4 left-1/4 h-24 w-16 -translate-x-1/2 -translate-y-1/2 animate-move-box-1 rounded-lg bg-white/10 backdrop-blur-sm"></div>
+              <div className="absolute bottom-1/4 right-1/4 h-24 w-16 translate-x-1/2 translate-y-1/2 animate-move-box-2 rounded-lg bg-white/10 backdrop-blur-sm"></div>
             </div>
           </div>
         </section>
