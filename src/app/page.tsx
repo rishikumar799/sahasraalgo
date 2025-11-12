@@ -100,7 +100,7 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section className="relative w-full overflow-hidden bg-black pb-20 pt-20 md:pb-32 md:pt-28 lg:pb-40 lg:pt-32">
+        <section className="relative w-full overflow-hidden bg-black pb-20 pt-12 md:pb-32 md:pt-16 lg:pb-40 lg:pt-20">
           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
             <div className="relative z-10 animate-fade-in-up text-center md:text-left">
               <h1 className="font-headline text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
