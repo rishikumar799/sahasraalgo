@@ -93,7 +93,7 @@ export default function Home() {
               className="rounded-full bg-gradient-to-r from-primary to-yellow-400 text-primary-foreground shadow-lg transition-transform hover:scale-105"
               asChild
             >
-              <Link href="/login">Login</Link>
+              <Link href="https://terminal.sahasraalgo.com/">Login</Link>
             </Button>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function Home() {
                   asChild
                   className="rounded-full bg-gradient-to-r from-primary to-yellow-400 text-primary-foreground shadow-lg transition-transform hover:scale-105"
                 >
-                  <Link href="/dashboard">
+                  <Link href="https://terminal.sahasraalgo.com/">
                     Get Started <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
