@@ -2,11 +2,12 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import './globals.css';
-import { Inter, Oswald } from 'next/font/google';
+import { Roboto, Oswald } from 'next/font/google';
 
-const inter = Inter({
+const roboto = Roboto({
   subsets: ['latin'],
   variable: '--font-body',
+  weight: ['400', '500', '700'],
 });
 
 const oswald = Oswald({
@@ -27,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${oswald.variable}`}
+      className={`${roboto.variable} ${oswald.variable}`}
       suppressHydrationWarning
     >
       <body className={cn('font-body antialiased bg-black text-white')}>
