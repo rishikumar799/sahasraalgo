@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'AlgoEdge',
+  title: 'Sahasra Algo',
   description: 'AI-driven trading insights and automation.',
 };
 

@@ -2,17 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { BrainCircuit, Bot, LineChart, TrendingUp } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Logo from '@/components/logo';
 
-const featurePlaceholders = {
-  ai: PlaceHolderImages.find((img) => img.id === 'feature-ai'),
-  automation: PlaceHolderImages.find((img) => img.id === 'feature-automation'),
-  data: PlaceHolderImages.find((img) => img.id === 'feature-data'),
-};
-
-const heroPlaceholder = PlaceHolderImages.find((img) => img.id === 'hero-image');
+const heroPlaceholder = PlaceHolderImages.find((img) => img.id === 'hero-chart');
 
 export default function Home() {
   return (
@@ -29,7 +22,7 @@ export default function Home() {
               <Link href="/login">Login</Link>
             </Button>
             <Button asChild>
-              <Link href="/signup">Get Started</Link>
+              <Link href="/signup">Sign Up</Link>
             </Button>
           </div>
         </div>
@@ -37,110 +30,57 @@ export default function Home() {
 
       <main className="flex-1">
         <section className="relative w-full py-20 md:py-32 lg:py-40">
-          {heroPlaceholder && (
-            <Image
-              src={heroPlaceholder.imageUrl}
-              alt={heroPlaceholder.description}
-              fill
-              className="absolute inset-0 -z-10 h-full w-full object-cover opacity-10"
-              data-ai-hint={heroPlaceholder.imageHint}
-            />
-          )}
-          <div className="container mx-auto text-center">
-            <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
-              Trade Smarter with <span className="text-primary">AlgoEdge</span>
-            </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground md:text-xl">
-              Leverage the power of AI to generate trading insights, automate your strategies, and stay ahead of the market.
-            </p>
-            <div className="mt-8 flex justify-center gap-4">
-              <Button size="lg" asChild>
-                <Link href="/signup">Start Your Free Trial</Link>
-              </Button>
-              <Button size="lg" variant="outline">
-                Learn More
-              </Button>
+          <div className="container mx-auto grid grid-cols-1 items-center gap-8 text-center md:grid-cols-2 md:text-left">
+            <div>
+              <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+                Best Algo Trading Platform for Traders
+              </h1>
+              <p className="mt-6 text-lg text-muted-foreground md:text-xl">
+                &quot;AI-powered trading made easy: faster execution, smarter decisions, better returns.&quot;
+              </p>
+              <div className="mt-8 flex justify-center gap-4 md:justify-start">
+                <Button size="lg" asChild>
+                  <Link href="/signup">SIGN UP</Link>
+                </Button>
+              </div>
+            </div>
+            <div className="relative mx-auto h-64 w-64 md:h-96 md:w-96">
+              {heroPlaceholder && (
+                <Image
+                  src={heroPlaceholder.imageUrl}
+                  alt={heroPlaceholder.description}
+                  fill
+                  className="rounded-lg object-cover shadow-[0_0_80px] shadow-primary/50"
+                  data-ai-hint={heroPlaceholder.imageHint}
+                />
+              )}
             </div>
           </div>
         </section>
 
-        <section id="features" className="w-full bg-card py-20 md:py-28">
+        <section id="algo-trading" className="w-full bg-gradient-to-b from-yellow-600 to-yellow-700 py-20 text-black md:py-28">
           <div className="container mx-auto">
-            <div className="text-center">
-              <h2 className="font-headline text-3xl font-bold sm:text-4xl">Core Features</h2>
-              <p className="mt-4 text-muted-foreground">Everything you need for an edge in algorithmic trading.</p>
-            </div>
-            <div className="mt-12 grid gap-8 md:grid-cols-3">
-              <Card className="flex flex-col">
-                {featurePlaceholders.ai && (
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src={featurePlaceholders.ai.imageUrl}
-                      alt={featurePlaceholders.ai.description}
-                      width={600}
-                      height={400}
-                      className="h-full w-full rounded-t-lg object-cover"
-                      data-ai-hint={featurePlaceholders.ai.imageHint}
-                    />
-                  </div>
-                )}
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 font-headline">
-                    <BrainCircuit className="h-6 w-6 text-primary" />
-                    AI Trading Insights
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground">Generate sophisticated analysis and predictions using our advanced AI, considering various technical indicators to inform your decisions.</p>
-                </CardContent>
-              </Card>
-              <Card className="flex flex-col">
-                {featurePlaceholders.automation && (
-                  <div className="relative h-48 w-full">
-                    <Image
-                      src={featurePlaceholders.automation.imageUrl}
-                      alt={featurePlaceholders.automation.description}
-                      width={600}
-                      height={400}
-                      className="h-full w-full rounded-t-lg object-cover"
-                      data-ai-hint={featurePlaceholders.automation.imageHint}
-                    />
-                  </div>
-                )}
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 font-headline">
-                    <Bot className="h-6 w-6 text-primary" />
-                    Automated Trading
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground">Set your parameters based on AI insights and let our platform execute trades for you, 24/7. Never miss an opportunity.</p>
-                </CardContent>
-              </Card>
-              <Card className="flex flex-col">
-                {featurePlaceholders.data && (
-                  <div className="relative h-48 w-full">
-                     <Image
-                      src={featurePlaceholders.data.imageUrl}
-                      alt={featurePlaceholders.data.description}
-                      width={600}
-                      height={400}
-                      className="h-full w-full rounded-t-lg object-cover"
-                      data-ai-hint={featurePlaceholders.data.imageHint}
-                    />
-                  </div>
-                )}
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2 font-headline">
-                    <LineChart className="h-6 w-6 text-primary" />
-                    Real-time Data
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground">Access current market data through interactive charts and graphs, allowing you to visualize trends and make timely decisions.</p>
-                </CardContent>
-              </Card>
-            </div>
+            <Card className="mx-auto max-w-4xl bg-white/90 p-8 shadow-2xl">
+              <CardHeader className="text-center">
+                <CardTitle className="font-headline text-3xl font-bold uppercase tracking-widest text-black sm:text-4xl">
+                  Algo Trading
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4 text-center text-lg text-neutral-800">
+                <p>
+                  Sahasra Algo Trading is a trusted provider of advanced algorithmic trading
+                  solutions, helping investors and institutions automate trades with precision and
+                  speed. Our platform combines cutting-edge AI and quantitative strategies to
+                  deliver efficient, data-driven trading across multiple asset classes.
+                </p>
+                <p>
+                  With a skilled team focused on innovation and reliability, we ensure secure and
+                  transparent systems that adapt to the changing markets. Sahasra is committed
+                  to empowering clients with technology to optimize their trading performance and
+                  achieve lasting financial success.
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </section>
       </main>
