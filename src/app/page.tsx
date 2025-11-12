@@ -81,7 +81,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-black">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black/50 backdrop-blur-lg">
-        <div className="container mx-auto flex h-20 max-w-screen-2xl items-center justify-between">
+        <div className="container mx-auto flex h-16 max-w-screen-2xl items-center justify-between">
           <div className="flex">
             <Link href="/" className="flex items-center space-x-2">
               <Logo />
@@ -100,7 +100,7 @@ export default function Home() {
       </header>
 
       <main className="flex-1">
-        <section className="relative w-full overflow-hidden bg-black pb-20 pt-12 md:pb-32 md:pt-16 lg:pb-40 lg:pt-20">
+        <section className="relative w-full overflow-hidden bg-black pb-20 md:pb-32 lg:pb-40">
           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
             <div className="relative z-10 animate-fade-in-up text-center md:text-left">
               <h1 className="font-headline text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
@@ -144,7 +144,7 @@ export default function Home() {
           className="w-full bg-gradient-to-b from-primary/90 via-yellow-600/90 to-amber-700/90 py-24 text-black md:py-32"
         >
           <div className="container mx-auto px-4 md:px-6">
-            <Card className="mx-auto max-w-4xl border-0 bg-white/95 p-8 shadow-2xl backdrop-blur-sm">
+            <Card className="mx-auto max-w-4xl border-0 bg-white/95 p-8 shadow-2xl backdrop-blur-sm transition-transform hover:scale-105 hover:shadow-primary/20">
               <CardHeader className="text-center">
                 <CardTitle className="font-headline text-3xl font-bold uppercase tracking-widest text-black sm:text-4xl">
                   Algo Trading
@@ -295,13 +295,13 @@ export default function Home() {
                       </Button>
 
                       <div className="mt-10 flex items-center justify-center gap-6 md:justify-start">
-                        <Link href="#" aria-label="Instagram">
+                        <Link href="#" aria-label="Instagram" className="transition-transform hover:scale-110">
                           <InstagramIcon />
                         </Link>
-                        <Link href="#" aria-label="Telegram">
+                        <Link href="#" aria-label="Telegram" className="transition-transform hover:scale-110">
                           <TelegramIcon />
                         </Link>
-                        <Link href="#" aria-label="YouTube" className="flex items-center gap-1">
+                        <Link href="#" aria-label="YouTube" className="flex items-center gap-1 transition-transform hover:scale-110">
                           <YouTubeIcon />
                         </Link>
                       </div>
