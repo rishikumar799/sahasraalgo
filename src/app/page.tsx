@@ -104,7 +104,9 @@ export default function Home() {
           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
             <div className="relative z-10 animate-fade-in-up text-center md:text-left">
               <h1 className="font-headline text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
-                Best Algo Trading Platform for Traders
+                Best Algo Trading <br />
+                Platform for <br />
+                Traders
               </h1>
               <p className="mx-auto mt-6 max-w-2xl text-lg text-neutral-300 md:mx-0 md:text-xl">
                 "AI-powered trading made easy: faster execution, smarter decisions, better returns."
@@ -122,7 +124,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative mx-auto h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px]">
-              <div className="absolute inset-[-50px] rounded-full bg-yellow-500/30 blur-[100px]" />
+              <div className="absolute inset-[-50px] rounded-full bg-yellow-500/20 blur-[120px]" />
               {heroPlaceholder && (
                 <Image
                   src={heroPlaceholder.imageUrl}
