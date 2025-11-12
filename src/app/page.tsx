@@ -60,21 +60,21 @@ const InstagramIcon = () => (
 );
 
 const TelegramIcon = () => (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-8 w-8 text-sky-500 transition-transform hover:scale-110"
-    >
-        <path d="m22 2-7 20-4-9-9-4Z" fill="#0088cc" strokeWidth={0}/>
-        <path d="M22 2 11 13" strokeWidth={1} stroke="white"/>
-    </svg>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-8 w-8 text-sky-500 transition-transform hover:scale-110"
+  >
+    <path d="m22 2-7 20-4-9-9-4Z" fill="#0088cc" strokeWidth={0} />
+    <path d="M22 2 11 13" strokeWidth={1} stroke="white" />
+  </svg>
 );
 
 export default function Home() {
@@ -82,7 +82,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col bg-background">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 max-w-screen-2xl items-center">
-          <div className="mr-4 flex">
+          <div className="mr-4 flex md:flex-1">
             <Link href="/" className="mr-6 flex items-center space-x-2">
               <Logo />
             </Link>
@@ -101,8 +101,8 @@ export default function Home() {
 
       <main className="flex-1">
         <section className="relative w-full py-20 md:py-32 lg:py-40">
-           <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background opacity-50"></div>
-           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 text-center md:grid-cols-2 md:gap-16 md:px-6 md:text-left">
+          <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background opacity-50"></div>
+          <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 text-center md:grid-cols-2 md:gap-16 md:px-6 md:text-left">
             <div className="relative z-10 animate-fade-in-up">
               <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                 Best Algo Trading Platform for Traders
@@ -137,7 +137,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="algo-trading" className="w-full bg-gradient-to-b from-primary/90 via-yellow-600/90 to-amber-700/90 py-24 text-black md:py-32">
+        <section
+          id="algo-trading"
+          className="w-full bg-gradient-to-b from-primary/90 via-yellow-600/90 to-amber-700/90 py-24 text-black md:py-32"
+        >
           <div className="container mx-auto px-4 md:px-6">
             <Card className="mx-auto max-w-4xl border-0 bg-white/95 p-8 shadow-2xl backdrop-blur-sm">
               <CardHeader className="text-center">
@@ -192,7 +195,7 @@ export default function Home() {
 
             {/* Strategy */}
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
-              <div className="relative h-72 w-full md:order-first md:h-96">
+              <div className="relative order-last h-72 w-full md:order-first md:h-96">
                 {strategyPlaceholder && (
                   <Image
                     src={strategyPlaceholder.imageUrl}
@@ -203,7 +206,7 @@ export default function Home() {
                   />
                 )}
               </div>
-              <div className="md:order-last">
+              <div className="order-first md:order-last">
                 <h2 className="font-headline text-4xl font-bold text-primary">Strategy</h2>
                 <p className="mt-6 text-lg text-muted-foreground">
                   Build powerful trading strategies with ready-made plugins or customize your own.
@@ -237,7 +240,7 @@ export default function Home() {
 
             {/* Paper Auto Trade */}
             <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
-              <div className="relative order-last h-72 w-full md:order-first md:h-96">
+              <div className="relative h-72 w-full md:h-96">
                 {paperAutoTradePlaceholder && (
                   <Image
                     src={paperAutoTradePlaceholder.imageUrl}
@@ -248,7 +251,7 @@ export default function Home() {
                   />
                 )}
               </div>
-              <div className="order-first md:order-last">
+              <div>
                 <h2 className="font-headline text-4xl font-bold text-primary">
                   Paper Auto Trade
                 </h2>
@@ -261,7 +264,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         <section id="community" className="w-full bg-background py-24 md:py-32">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-center font-headline text-4xl font-bold text-white sm:text-5xl">
