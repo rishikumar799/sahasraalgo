@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Logo from '@/components/logo';
 import { ArrowRight, BarChartHorizontalBig, Bot, Cpu, Phone, Wifi } from 'lucide-react';
+import { DM_Serif_Display, Plus_Jakarta_Sans } from 'next/font/google';
 
 const heroPlaceholder = PlaceHolderImages.find((img) => img.id === 'hero-chart');
 const automatedTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'automated-trade');
@@ -347,7 +348,7 @@ export default function Home() {
                           src={communityPlaceholder.imageUrl}
                           alt={communityPlaceholder.description}
                           fill
-                          className="object-contain"
+                          className="rounded-lg object-cover"
                           data-ai-hint={communityPlaceholder.imageHint}
                         />
                       )}

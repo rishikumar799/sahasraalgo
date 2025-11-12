@@ -2,16 +2,17 @@ import type { Metadata } from 'next';
 import { Toaster } from '@/components/ui/toaster';
 import { cn } from '@/lib/utils';
 import './globals.css';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Plus_Jakarta_Sans, DM_Serif_Display } from 'next/font/google';
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  variable: '--font-inter',
+  variable: '--font-body',
 });
 
-const spaceGrotesk = Space_Grotesk({
+const dmSerifDisplay = DM_Serif_Display({
   subsets: ['latin'],
-  variable: '--font-space-grotesk',
+  variable: '--font-headline',
+  weight: '400',
 });
 
 export const metadata: Metadata = {
@@ -25,7 +26,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`} suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`${plusJakartaSans.variable} ${dmSerifDisplay.variable}`}
+      suppressHydrationWarning
+    >
       <body className={cn('font-body antialiased bg-black text-white')}>
         {children}
         <Toaster />

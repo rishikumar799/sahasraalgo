@@ -32,9 +32,9 @@
     },
     {
       "id": "community",
-      "description": "A colorful abstract image representing a community or network of people.",
-      "imageUrl": "https://storage.googleapis.com/aifire.appspot.com/user-uploads/ozvrmc489c/community_graphic.png?alt=media&token=8543f4a2-8924-4f40-a150-1eb246f66318",
-      "imageHint": "community network"
+      "description": "A diverse group of people collaborating on a project, representing teamwork and community.",
+      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTcyNTAyMDgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team collaboration"
     }
   ]
 }
