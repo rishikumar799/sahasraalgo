@@ -4,13 +4,78 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Logo from '@/components/logo';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Instagram, Send, Youtube, Phone } from 'lucide-react';
 
 const heroPlaceholder = PlaceHolderImages.find((img) => img.id === 'hero-chart');
 const automatedTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'automated-trade');
 const strategyPlaceholder = PlaceHolderImages.find((img) => img.id === 'strategy');
 const lowLatencyPlaceholder = PlaceHolderImages.find((img) => img.id === 'low-latency');
 const paperAutoTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'paper-auto-trade');
+const communityPlaceholder = PlaceHolderImages.find((img) => img.id === 'community');
+
+const YouTubeIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-8 w-8 text-red-600"
+  >
+    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+    <path d="m10 15 5-3-5-3z" />
+  </svg>
+);
+
+const InstagramIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className="h-8 w-8"
+  >
+    <defs>
+      <radialGradient id="insta-gradient" r="150%" cx="30%" cy="107%">
+        <stop stopColor="#fdf497" offset="0" />
+        <stop stopColor="#fdf497" offset="0.05" />
+        <stop stopColor="#fd5949" offset="0.45" />
+        <stop stopColor="#d6249f" offset="0.6" />
+        <stop stopColor="#285AEB" offset="0.9" />
+      </radialGradient>
+    </defs>
+    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" stroke="url(#insta-gradient)" />
+    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="url(#insta-gradient)" />
+    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" stroke="url(#insta-gradient)" />
+  </svg>
+);
+
+const TelegramIcon = () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="h-8 w-8 text-sky-500"
+    >
+        <path d="m22 2-7 20-4-9-9-4Z" fill="#0088cc" strokeWidth={0}/>
+        <path d="M22 2 11 13" strokeWidth={1} stroke="white"/>
+    </svg>
+);
 
 export default function Home() {
   return (
@@ -172,7 +237,7 @@ export default function Home() {
 
             {/* Paper Auto Trade */}
             <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
-              <div className="relative h-64 w-full md:h-80">
+              <div className="relative order-last h-64 w-full md:order-first md:h-80">
                 {paperAutoTradePlaceholder && (
                   <Image
                     src={paperAutoTradePlaceholder.imageUrl}
@@ -183,7 +248,7 @@ export default function Home() {
                   />
                 )}
               </div>
-              <div>
+              <div className="order-first md:order-last">
                 <h2 className="font-headline text-3xl font-bold text-primary">
                   Paper Auto Trade
                 </h2>
@@ -192,6 +257,76 @@ export default function Home() {
                   market conditions, refine your strategies, and gain confidence before real
                   investments.
                 </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section id="community" className="w-full bg-background py-20 md:py-28">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-center font-headline text-3xl font-bold text-white sm:text-4xl">
+              Join Our Community
+            </h2>
+            <div className="mt-12">
+              <div className="relative mx-auto max-w-4xl overflow-hidden rounded-lg bg-black shadow-2xl">
+                <div className="absolute -bottom-1/2 -right-1/4 h-full w-1/2 -rotate-45 bg-gradient-to-r from-yellow-600/30 to-yellow-700/10 blur-3xl"></div>
+                <div className="absolute -top-1/2 -left-1/4 h-full w-1/2 -rotate-45 bg-gradient-to-l from-yellow-600/30 to-yellow-700/10 blur-3xl"></div>
+
+                <div className="relative bg-white/10 p-8 backdrop-blur-sm">
+                  <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
+                    <div className="text-center md:text-left">
+                      <h3 className="font-headline text-2xl font-bold text-white">
+                        Become a Part of the Sahasra Community
+                      </h3>
+                      <p className="mt-4 text-lg text-muted-foreground">
+                        Join the Sahasra algo and Connect with Like-Minded Traders to Share Insights,
+                        Strategies, and Achieve Success Together
+                      </p>
+                      <Button
+                        size="lg"
+                        className="mt-8 bg-white text-black hover:bg-neutral-200"
+                      >
+                        JOIN US TODAY
+                      </Button>
+
+                      <div className="mt-8 flex items-center justify-center gap-6 md:justify-start">
+                        <Link href="#" aria-label="Instagram">
+                          <InstagramIcon />
+                        </Link>
+                        <Link href="#" aria-label="Telegram">
+                          <TelegramIcon />
+                        </Link>
+                        <Link href="#" aria-label="YouTube" className="flex items-center gap-1">
+                          <YouTubeIcon />
+                        </Link>
+                      </div>
+
+                      <div className="mt-8 border-t border-border/40 pt-6 text-center md:text-left">
+                        <p className="text-sm uppercase tracking-widest text-muted-foreground">
+                          Contact us
+                        </p>
+                        <a
+                          href="tel:+919121004729"
+                          className="mt-2 flex items-center justify-center gap-2 text-lg font-semibold text-white md:justify-start"
+                        >
+                          <Phone className="h-5 w-5 text-green-500" />
+                          <span>+91 9121004729</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div className="relative hidden h-64 w-full md:block md:h-80">
+                      {communityPlaceholder && (
+                        <Image
+                          src={communityPlaceholder.imageUrl}
+                          alt={communityPlaceholder.description}
+                          fill
+                          className="object-contain"
+                          data-ai-hint={communityPlaceholder.imageHint}
+                        />
+                      )}
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
