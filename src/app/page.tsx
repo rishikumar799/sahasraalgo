@@ -168,10 +168,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="features" className="w-full bg-black py-24 md:py-32">
-          <div className="container mx-auto space-y-28 px-4 md:px-6">
-            {/* Automated Trade Execution */}
-            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
+        <section id="features" className="w-full">
+          <div className="bg-black py-24 md:py-32">
+            <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16">
               <div>
                 <h2 className="font-headline text-4xl font-bold text-primary">
                   Automated Trade Execution
@@ -194,31 +193,33 @@ export default function Home() {
                 )}
               </div>
             </div>
+          </div>
 
-            {/* Strategy */}
-            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
+          <div className="bg-gradient-to-b from-primary/90 via-yellow-600/90 to-amber-700/90 py-24 text-black md:py-32">
+            <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16">
               <div className="relative order-last h-72 w-full md:order-first md:h-96">
                 {strategyPlaceholder && (
                   <Image
                     src={strategyPlaceholder.imageUrl}
                     alt={strategyPlaceholder.description}
                     fill
-                    className="rounded-xl object-cover shadow-2xl shadow-primary/10"
+                    className="rounded-xl object-cover shadow-2xl"
                     data-ai-hint={strategyPlaceholder.imageHint}
                   />
                 )}
               </div>
               <div className="order-first md:order-last">
-                <h2 className="font-headline text-4xl font-bold text-primary">Strategy</h2>
-                <p className="mt-6 text-lg text-white">
+                <h2 className="font-headline text-4xl font-bold text-black">Strategy</h2>
+                <p className="mt-6 text-lg text-black">
                   Build powerful trading strategies with ready-made plugins or customize your own.
                   Set dynamic parameters and automate execution for smarter trading.
                 </p>
               </div>
             </div>
+          </div>
 
-            {/* Low Latency */}
-            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
+          <div className="bg-black py-24 md:py-32">
+            <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16">
               <div>
                 <h2 className="font-headline text-4xl font-bold text-primary">Low Latency</h2>
                 <p className="mt-6 text-lg text-white">
@@ -239,25 +240,24 @@ export default function Home() {
                 )}
               </div>
             </div>
+          </div>
 
-            {/* Paper Auto Trade */}
-            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
+          <div className="bg-gradient-to-b from-primary/90 via-yellow-600/90 to-amber-700/90 py-24 text-black md:py-32">
+            <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16">
               <div className="relative h-72 w-full md:h-96">
                 {paperAutoTradePlaceholder && (
                   <Image
                     src={paperAutoTradePlaceholder.imageUrl}
                     alt={paperAutoTradePlaceholder.description}
                     fill
-                    className="rounded-xl object-cover shadow-2xl shadow-primary/10"
+                    className="rounded-xl object-cover shadow-2xl"
                     data-ai-hint={paperAutoTradePlaceholder.imageHint}
                   />
                 )}
               </div>
               <div>
-                <h2 className="font-headline text-4xl font-bold text-primary">
-                  Paper Auto Trade
-                </h2>
-                <p className="mt-6 text-lg text-white">
+                <h2 className="font-headline text-4xl font-bold text-black">Paper Auto Trade</h2>
+                <p className="mt-6 text-lg text-black">
                   Practice risk-free with real-market simulations. Trade virtual money in live
                   market conditions, refine your strategies, and gain confidence before real
                   investments.
