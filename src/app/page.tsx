@@ -4,8 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Logo from '@/components/logo';
-import { ArrowRight, BarChartHorizontalBig, Bot, Cpu, Phone, Wifi } from 'lucide-react';
-import { DM_Serif_Display, Plus_Jakarta_Sans } from 'next/font/google';
+import { ArrowRight, BarChartHorizontalBig, Bot, Cpu, Phone, Star, Wifi } from 'lucide-react';
 
 const heroPlaceholder = PlaceHolderImages.find((img) => img.id === 'hero-chart');
 const automatedTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'automated-trade');
@@ -136,9 +135,7 @@ export default function Home() {
                   data-ai-hint={heroPlaceholder.imageHint}
                 />
               )}
-               <div className="absolute top-1/4 left-1/4 h-24 w-16 -translate-x-1/2 -translate-y-1/2 animate-move-box-1 rounded-lg bg-white/10 backdrop-blur-sm"></div>
-              <div className="absolute bottom-1/4 right-1/4 h-24 w-16 translate-x-1/2 translate-y-1/2 animate-move-box-2 rounded-lg bg-white/10 backdrop-blur-sm"></div>
-              <div className="absolute z-20 bottom-0 -left-20 w-max animate-float-very-slow hidden lg:block">
+               <div className="absolute z-20 bottom-0 -left-20 w-max animate-float-very-slow hidden lg:block">
                 <div className="flex items-center gap-3 rounded-lg bg-black/50 p-3 backdrop-blur-md">
                   <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/20">
                     <BarChartHorizontalBig className="h-5 w-5 text-primary" />
@@ -156,6 +153,14 @@ export default function Home() {
                   <div className="flex-1">
                     <p className="font-bold text-white text-sm">Algorithmic Precision</p>
                   </div>
+                </div>
+              </div>
+              <div className="absolute z-20 top-0 -left-20 w-max animate-float-very-slow hidden lg:block">
+                <div className="relative flex h-24 w-24 items-center justify-center">
+                  <Star className="absolute h-full w-full text-yellow-400" fill="currentColor" />
+                  <p className="relative z-10 text-center text-xs font-bold text-black">
+                    100% <br /> Trusted
+                  </p>
                 </div>
               </div>
             </div>
@@ -346,7 +351,7 @@ export default function Home() {
                       {communityPlaceholder && (
                         <Image
                           src={communityPlaceholder.imageUrl}
-                          alt={communityPlaceholder.description}
+                          alt="A diverse group of people collaborating on a project, representing teamwork and community."
                           fill
                           className="rounded-lg object-cover"
                           data-ai-hint={communityPlaceholder.imageHint}
