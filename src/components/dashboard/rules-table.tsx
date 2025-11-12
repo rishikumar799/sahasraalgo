@@ -81,8 +81,8 @@ export default function RulesTable() {
             <TableCell className="font-medium">{rule.instrument}</TableCell>
             <TableCell>{rule.condition}</TableCell>
             <TableCell>
-              <Badge variant={rule.action === 'BUY' ? 'default' : 'destructive'}
-                 className={rule.action === 'BUY' ? `bg-accent text-accent-foreground` : ''}>
+              <Badge variant={rule.action === 'BUY' ? 'secondary' : 'destructive'}
+                 className={rule.action === 'BUY' ? `bg-green-600/20 text-green-400 border-green-600/30 hover:bg-green-600/30` : ''}>
                 {rule.action}
               </Badge>
             </TableCell>

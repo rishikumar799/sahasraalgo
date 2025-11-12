@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Logo from '@/components/logo';
-import { ArrowRight, Instagram, Send, Youtube, Phone } from 'lucide-react';
+import { ArrowRight, Phone } from 'lucide-react';
 
 const heroPlaceholder = PlaceHolderImages.find((img) => img.id === 'hero-chart');
 const automatedTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'automated-trade');
@@ -24,7 +24,7 @@ const YouTubeIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="h-8 w-8 text-red-600"
+    className="h-8 w-8 text-red-600 transition-transform hover:scale-110"
   >
     <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
     <path d="m10 15 5-3-5-3z" />
@@ -42,7 +42,7 @@ const InstagramIcon = () => (
     strokeWidth="2"
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="h-8 w-8"
+    className="h-8 w-8 transition-transform hover:scale-110"
   >
     <defs>
       <radialGradient id="insta-gradient" r="150%" cx="30%" cy="107%">
@@ -70,7 +70,7 @@ const TelegramIcon = () => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="h-8 w-8 text-sky-500"
+      className="h-8 w-8 text-sky-500 transition-transform hover:scale-110"
     >
         <path d="m22 2-7 20-4-9-9-4Z" fill="#0088cc" strokeWidth={0}/>
         <path d="M22 2 11 13" strokeWidth={1} stroke="white"/>
@@ -81,7 +81,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 max-w-screen-2xl items-center">
+        <div className="container flex h-16 max-w-screen-2xl items-center">
           <div className="mr-4 flex">
             <Link href="/" className="mr-6 flex items-center space-x-2">
               <Logo />
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="flex flex-1 items-center justify-end space-x-2">
             <Button
               variant="default"
-              className="rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 text-black shadow-lg transition-transform hover:scale-105"
+              className="rounded-full bg-gradient-to-r from-primary to-yellow-400 text-primary-foreground shadow-lg transition-transform hover:scale-105"
               asChild
             >
               <Link href="/login">Login</Link>
@@ -102,19 +102,19 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative w-full py-20 md:py-32 lg:py-40">
            <div className="absolute inset-0 bg-gradient-to-br from-background via-transparent to-background opacity-50"></div>
-           <div className="container mx-auto grid grid-cols-1 items-center gap-8 px-4 text-center md:grid-cols-2 md:gap-16 md:px-6 md:text-left">
-            <div className="relative z-10">
+           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 text-center md:grid-cols-2 md:gap-16 md:px-6 md:text-left">
+            <div className="relative z-10 animate-fade-in-up">
               <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
                 Best Algo Trading Platform for Traders
               </h1>
               <p className="mt-6 max-w-3xl text-lg text-muted-foreground md:text-xl">
                 "AI-powered trading made easy: faster execution, smarter decisions, better returns."
               </p>
-              <div className="mt-8 flex justify-center gap-4 md:justify-start">
+              <div className="mt-10 flex justify-center gap-4 md:justify-start">
                 <Button
                   size="lg"
                   asChild
-                  className="rounded-full bg-gradient-to-r from-yellow-400 to-amber-500 text-black shadow-lg transition-transform hover:scale-105"
+                  className="rounded-full bg-gradient-to-r from-primary to-yellow-400 text-primary-foreground shadow-lg transition-transform hover:scale-105"
                 >
                   <Link href="/dashboard">
                     Get Started <ArrowRight className="ml-2 h-5 w-5" />
@@ -129,7 +129,7 @@ export default function Home() {
                   alt={heroPlaceholder.description}
                   fill
                   priority
-                  className="rounded-lg object-cover shadow-[0_0_80px] shadow-primary/50"
+                  className="rounded-lg object-cover shadow-[0_0_100px] shadow-primary/40"
                   data-ai-hint={heroPlaceholder.imageHint}
                 />
               )}
@@ -137,9 +137,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="algo-trading" className="w-full bg-gradient-to-b from-yellow-600/90 to-yellow-700/90 py-20 text-black md:py-28">
+        <section id="algo-trading" className="w-full bg-gradient-to-b from-primary/90 via-yellow-600/90 to-amber-700/90 py-24 text-black md:py-32">
           <div className="container mx-auto px-4 md:px-6">
-            <Card className="mx-auto max-w-4xl bg-white/90 p-8 shadow-2xl backdrop-blur-sm">
+            <Card className="mx-auto max-w-4xl border-0 bg-white/95 p-8 shadow-2xl backdrop-blur-sm">
               <CardHeader className="text-center">
                 <CardTitle className="font-headline text-3xl font-bold uppercase tracking-widest text-black sm:text-4xl">
                   Algo Trading
@@ -163,27 +163,27 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="features" className="w-full bg-background py-20 md:py-28">
-          <div className="container mx-auto space-y-20 px-4 md:px-6">
+        <section id="features" className="w-full bg-background py-24 md:py-32">
+          <div className="container mx-auto space-y-28 px-4 md:px-6">
             {/* Automated Trade Execution */}
-            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
+            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
               <div>
-                <h2 className="font-headline text-3xl font-bold text-primary">
+                <h2 className="font-headline text-4xl font-bold text-primary">
                   Automated Trade Execution
                 </h2>
-                <p className="mt-4 text-lg text-muted-foreground">
+                <p className="mt-6 text-lg text-muted-foreground">
                   Trades are executed automatically based on predefined rules and algorithms
                   without manual intervention. This feature eliminates human emotions such as fear
                   and greed and ensures faster and more accurate trade placement.
                 </p>
               </div>
-              <div className="relative h-64 w-full md:h-80">
+              <div className="relative h-72 w-full md:h-96">
                 {automatedTradePlaceholder && (
                   <Image
                     src={automatedTradePlaceholder.imageUrl}
                     alt={automatedTradePlaceholder.description}
                     fill
-                    className="rounded-lg object-cover shadow-lg"
+                    className="rounded-xl object-cover shadow-2xl shadow-primary/10"
                     data-ai-hint={automatedTradePlaceholder.imageHint}
                   />
                 )}
@@ -191,21 +191,21 @@ export default function Home() {
             </div>
 
             {/* Strategy */}
-            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
-              <div className="relative h-64 w-full md:order-first md:h-80">
+            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
+              <div className="relative h-72 w-full md:order-first md:h-96">
                 {strategyPlaceholder && (
                   <Image
                     src={strategyPlaceholder.imageUrl}
                     alt={strategyPlaceholder.description}
                     fill
-                    className="rounded-lg object-cover shadow-lg"
+                    className="rounded-xl object-cover shadow-2xl shadow-primary/10"
                     data-ai-hint={strategyPlaceholder.imageHint}
                   />
                 )}
               </div>
               <div className="md:order-last">
-                <h2 className="font-headline text-3xl font-bold text-primary">Strategy</h2>
-                <p className="mt-4 text-lg text-muted-foreground">
+                <h2 className="font-headline text-4xl font-bold text-primary">Strategy</h2>
+                <p className="mt-6 text-lg text-muted-foreground">
                   Build powerful trading strategies with ready-made plugins or customize your own.
                   Set dynamic parameters and automate execution for smarter trading.
                 </p>
@@ -213,22 +213,22 @@ export default function Home() {
             </div>
 
             {/* Low Latency */}
-            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
+            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
               <div>
-                <h2 className="font-headline text-3xl font-bold text-primary">Low Latency</h2>
-                <p className="mt-4 text-lg text-muted-foreground">
+                <h2 className="font-headline text-4xl font-bold text-primary">Low Latency</h2>
+                <p className="mt-6 text-lg text-muted-foreground">
                   Experience ultra-fast trade execution with low-latency infrastructure that
                   optimizes order flow through high-speed trading servers for seamless
                   transactions.
                 </p>
               </div>
-              <div className="relative h-64 w-full md:h-80">
+              <div className="relative h-72 w-full md:h-96">
                 {lowLatencyPlaceholder && (
                   <Image
                     src={lowLatencyPlaceholder.imageUrl}
                     alt={lowLatencyPlaceholder.description}
                     fill
-                    className="rounded-lg object-cover shadow-lg"
+                    className="rounded-xl object-cover shadow-2xl shadow-primary/10"
                     data-ai-hint={lowLatencyPlaceholder.imageHint}
                   />
                 )}
@@ -236,23 +236,23 @@ export default function Home() {
             </div>
 
             {/* Paper Auto Trade */}
-            <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
-              <div className="relative order-last h-64 w-full md:order-first md:h-80">
+            <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
+              <div className="relative order-last h-72 w-full md:order-first md:h-96">
                 {paperAutoTradePlaceholder && (
                   <Image
                     src={paperAutoTradePlaceholder.imageUrl}
                     alt={paperAutoTradePlaceholder.description}
                     fill
-                    className="rounded-lg object-cover shadow-lg"
+                    className="rounded-xl object-cover shadow-2xl shadow-primary/10"
                     data-ai-hint={paperAutoTradePlaceholder.imageHint}
                   />
                 )}
               </div>
               <div className="order-first md:order-last">
-                <h2 className="font-headline text-3xl font-bold text-primary">
+                <h2 className="font-headline text-4xl font-bold text-primary">
                   Paper Auto Trade
                 </h2>
-                <p className="mt-4 text-lg text-muted-foreground">
+                <p className="mt-6 text-lg text-muted-foreground">
                   Practice risk-free with real-market simulations. Trade virtual money in live
                   market conditions, refine your strategies, and gain confidence before real
                   investments.
@@ -262,34 +262,34 @@ export default function Home() {
           </div>
         </section>
         
-        <section id="community" className="w-full bg-background py-20 md:py-28">
+        <section id="community" className="w-full bg-background py-24 md:py-32">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-center font-headline text-3xl font-bold text-white sm:text-4xl">
+            <h2 className="text-center font-headline text-4xl font-bold text-white sm:text-5xl">
               Join Our Community
             </h2>
-            <div className="mt-12">
-              <div className="relative mx-auto max-w-4xl overflow-hidden rounded-lg bg-black shadow-2xl">
-                <div className="absolute -bottom-1/2 -right-1/4 h-full w-1/2 -rotate-45 bg-gradient-to-r from-yellow-600/30 to-yellow-700/10 blur-3xl"></div>
-                <div className="absolute -top-1/2 -left-1/4 h-full w-1/2 -rotate-45 bg-gradient-to-l from-yellow-600/30 to-yellow-700/10 blur-3xl"></div>
+            <div className="mt-16">
+              <div className="relative mx-auto max-w-5xl overflow-hidden rounded-2xl bg-card shadow-2xl">
+                <div className="absolute -bottom-1/2 -right-1/4 h-full w-1/2 -rotate-45 bg-gradient-to-r from-primary/20 to-primary/5 blur-3xl"></div>
+                <div className="absolute -top-1/2 -left-1/4 h-full w-1/2 -rotate-45 bg-gradient-to-l from-primary/20 to-primary/5 blur-3xl"></div>
 
-                <div className="relative bg-white/10 p-8 backdrop-blur-sm">
-                  <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2 md:gap-16">
+                <div className="relative bg-card/50 p-8 backdrop-blur-sm md:p-12">
+                  <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2 md:gap-16">
                     <div className="text-center md:text-left">
-                      <h3 className="font-headline text-2xl font-bold text-white">
+                      <h3 className="font-headline text-3xl font-bold text-white">
                         Become a Part of the Sahasra Community
                       </h3>
-                      <p className="mt-4 text-lg text-muted-foreground">
+                      <p className="mt-6 text-lg text-muted-foreground">
                         Join the Sahasra algo and Connect with Like-Minded Traders to Share Insights,
                         Strategies, and Achieve Success Together
                       </p>
                       <Button
                         size="lg"
-                        className="mt-8 bg-white text-black hover:bg-neutral-200"
+                        className="mt-10 rounded-full bg-white text-black transition-transform hover:scale-105 hover:bg-neutral-200"
                       >
                         JOIN US TODAY
                       </Button>
 
-                      <div className="mt-8 flex items-center justify-center gap-6 md:justify-start">
+                      <div className="mt-10 flex items-center justify-center gap-6 md:justify-start">
                         <Link href="#" aria-label="Instagram">
                           <InstagramIcon />
                         </Link>
@@ -301,20 +301,20 @@ export default function Home() {
                         </Link>
                       </div>
 
-                      <div className="mt-8 border-t border-border/40 pt-6 text-center md:text-left">
+                      <div className="mt-10 border-t border-border/40 pt-8 text-center md:text-left">
                         <p className="text-sm uppercase tracking-widest text-muted-foreground">
                           Contact us
                         </p>
                         <a
                           href="tel:+919121004729"
-                          className="mt-2 flex items-center justify-center gap-2 text-lg font-semibold text-white md:justify-start"
+                          className="mt-3 flex items-center justify-center gap-3 text-xl font-semibold text-white transition-colors hover:text-primary md:justify-start"
                         >
                           <Phone className="h-5 w-5 text-green-500" />
                           <span>+91 9121004729</span>
                         </a>
                       </div>
                     </div>
-                    <div className="relative hidden h-64 w-full md:block md:h-80">
+                    <div className="relative hidden h-72 w-full md:block md:h-96">
                       {communityPlaceholder && (
                         <Image
                           src={communityPlaceholder.imageUrl}
@@ -334,7 +334,7 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-border/40">
-        <div className="container mx-auto flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
+        <div className="container mx-auto flex flex-col items-center justify-between gap-6 py-12 md:h-24 md:flex-row md:py-0">
           <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
             <Logo />
             <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
