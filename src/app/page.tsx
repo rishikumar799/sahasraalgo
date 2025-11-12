@@ -153,7 +153,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="absolute z-20 -top-8 -left-16 w-max animate-pulse-slow hidden lg:block">
+              <div className="absolute z-20 -top-8 -left-16 w-max animate-float-very-slow-reverse hidden lg:block">
                 <div className="relative flex h-24 w-24 items-center justify-center">
                   <Star className="absolute h-full w-full text-yellow-400" fill="currentColor" />
                   <p className="relative z-10 text-center text-xs font-bold text-black">
