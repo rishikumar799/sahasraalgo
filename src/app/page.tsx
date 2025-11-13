@@ -1,3 +1,4 @@
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -16,7 +17,7 @@ const communityPlaceholder = PlaceHolderImages.find((img) => img.id === 'communi
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-black overflow-x-hidden">
-      <header className="w-full border-b border-border/40 bg-black">
+      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black">
         <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between">
           <div className="flex">
             <Link href="/" className="flex items-center space-x-2">
