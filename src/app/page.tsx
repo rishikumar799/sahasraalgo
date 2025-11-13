@@ -261,7 +261,7 @@ export default function Home() {
                       <Button
                         size="lg"
                         asChild
-                        className="mt-10 rounded-full bg-gradient-to-b from-yellow-400 to-amber-600 font-bold text-black shadow-lg transition-transform hover:scale-105"
+                        className="mt-10 rounded-lg bg-gradient-to-b from-yellow-400 to-amber-600 px-8 py-4 text-base font-bold text-black shadow-lg transition-transform hover:scale-105"
                       >
                         <Link href="https://terminal.sahasraalgo.com/auth/login">JOIN US TODAY</Link>
                       </Button>
