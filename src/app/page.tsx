@@ -260,7 +260,7 @@ export default function Home() {
                         asChild
                         className="mt-10 rounded-full bg-gradient-to-b from-yellow-400 to-amber-600 font-bold text-black shadow-lg transition-transform hover:scale-105"
                       >
-                        <Link href="https://terminal.sahasraalgo.com/">JOIN US TODAY</Link>
+                        <Link href="https://terminal.sahasraalgo.com/auth/login">JOIN US TODAY</Link>
                       </Button>
 
                       <div className="mt-10 flex items-center justify-center gap-6 md:justify-start">
@@ -323,3 +323,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
