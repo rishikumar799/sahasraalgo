@@ -26,7 +26,7 @@ export default function Home() {
           <div className="flex items-center justify-end space-x-4">
             <Button
               variant="default"
-              className="rounded-lg bg-gradient-to-b from-yellow-400 to-amber-600 px-8 py-3 text-sm font-bold text-black shadow-lg transition-transform hover:scale-105"
+              className="rounded-lg bg-gradient-to-b from-yellow-400 to-amber-600 px-6 py-2 text-xs font-bold text-black shadow-lg transition-transform hover:scale-105 sm:px-8 sm:py-3 sm:text-sm"
               asChild
             >
               <Link href="https://terminal.sahasraalgo.com/">LOGIN</Link>
