@@ -3,37 +3,37 @@
     {
       "id": "hero-chart",
       "description": "A glowing yellow stock chart on a dark background",
-      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/tr:w-1200,h-600/Sahasra2.png?updatedAt=1763010914305",
+      "imageUrl": "/images/Sahasra2.png",
       "imageHint": "stock chart"
     },
     {
       "id": "automated-trade",
       "description": "A person's hands typing on a futuristic/glowing keyboard with charts in the background.",
-      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/Sahasra3.png?updatedAt=1763010914932",
+      "imageUrl": "/images/Sahasra3.png",
       "imageHint": "automated trading"
     },
     {
       "id": "strategy",
       "description": "A person at a desk with multiple screens showing trading charts.",
-      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/Sahasra4.png?updatedAt=1763010914901",
+      "imageUrl": "/images/Sahasra4.png",
       "imageHint": "trading strategy"
     },
     {
       "id": "low-latency",
       "description": "An abstract visualization of a high-speed network or data flow.",
-      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/Sahasra5.png?updatedAt=1763010915028",
+      "imageUrl": "/images/Sahasra5.png",
       "imageHint": "data network"
     },
     {
       "id": "paper-auto-trade",
       "description": "A person analyzing charts and data on paper.",
-      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/Sahasra6.png?updatedAt=1763010914924",
+      "imageUrl": "/images/Sahasra6.png",
       "imageHint": "analyzing charts"
     },
     {
       "id": "community",
       "description": "A diverse group of people collaborating on a project, representing teamwork and community.",
-      "imageUrl": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb2xsYWJvcmF0aW9ufGVufDB8fHx8MTcyNTAyMDgwOHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/community.jpg",
       "imageHint": "team collaboration"
     }
   ]

@@ -267,10 +267,10 @@ export default function Home() {
                           <InstagramIcon />
                         </Link>
                         <Link href="https://wa.me/919121004729" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="transition-transform hover:scale-110">
-                           <Image src="https://ik.imagekit.io/7z0x3rycfi/sahasra/whatsapp.png?updatedAt=1763011712720" alt="WhatsApp" width={32} height={32} />
+                           <Image src="/images/whatsapp.png" alt="WhatsApp" width={32} height={32} />
                         </Link>
                         <Link href="https://youtube.com/@sahasra-atradingcommunity824?si=cBxvuhXun9YnEk-g" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="transition-transform hover:scale-110">
-                           <Image src="https://ik.imagekit.io/7z0x3rycfi/sahasra/youtube.png?updatedAt=1763011724131" alt="YouTube" width={32} height={32} />
+                           <Image src="/images/youtube.png" alt="YouTube" width={32} height={32} />
                         </Link>
                       </div>
 
