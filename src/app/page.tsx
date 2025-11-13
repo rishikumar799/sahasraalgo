@@ -66,8 +66,8 @@ export default function Home() {
       <main className="flex-1">
         <section className="relative w-full overflow-hidden bg-black py-16 md:py-20 lg:py-24">
           <div className="absolute inset-0 z-0">
-            <div className="absolute left-1/4 top-0 h-72 w-72 animate-float-very-slow-reverse rounded-full bg-yellow-500/20 blur-[150px]"></div>
-            <div className="absolute bottom-0 right-1/4 h-72 w-72 animate-float-very-slow rounded-full bg-primary/20 blur-[150px]"></div>
+            <div className="absolute left-1/4 top-0 h-72 w-72 animate-fade-in-out-slow-1 rounded-full bg-yellow-500/20 blur-[200px]"></div>
+            <div className="absolute bottom-0 right-1/4 h-72 w-72 animate-fade-in-out-slow-2 rounded-full bg-primary/20 blur-[200px]"></div>
           </div>
           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
             <div className="relative z-10 animate-fade-in-up text-center md:text-left">
@@ -85,7 +85,7 @@ export default function Home() {
                   asChild
                   className="rounded-lg bg-gradient-to-b from-yellow-400 to-amber-600 px-8 py-4 text-base font-bold text-black shadow-lg transition-transform hover:scale-105"
                 >
-                  <Link href="https://terminal.sahasraalgo.com/">
+                  <Link href="https://terminal.sahasraalgo.com/auth/login">
                     GET STARTED <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
