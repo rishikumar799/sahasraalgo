@@ -65,6 +65,10 @@ export default function Home() {
 
       <main className="flex-1">
         <section className="relative w-full overflow-hidden bg-black py-16 md:py-20 lg:py-24">
+          <div className="absolute inset-0 z-0">
+            <div className="absolute left-1/4 top-0 h-72 w-72 animate-pulse-slow rounded-full bg-yellow-500/20 blur-[120px]"></div>
+            <div className="absolute bottom-0 right-1/4 h-72 w-72 animate-pulse-slow rounded-full bg-primary/20 blur-[120px]"></div>
+          </div>
           <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
             <div className="relative z-10 animate-fade-in-up text-center md:text-left">
               <h1 className="font-headline text-5xl font-extrabold tracking-tight text-white sm:text-6xl md:text-7xl">
@@ -87,15 +91,14 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto h-[300px] w-[300px] md:h-[400px] md:w-[400px] lg:h-[450px] lg:w-[450px]">
-              <div className="absolute inset-[-150px] rounded-full bg-yellow-500/30 blur-[120px] animate-pulse-slow" />
+            <div className="relative mx-auto h-[300px] w-full max-w-[450px] md:h-[400px] lg:h-[450px]">
               {heroPlaceholder && (
                 <Image
                   src={heroPlaceholder.imageUrl}
                   alt={heroPlaceholder.description}
                   fill
                   priority
-                  className="z-10 rounded-lg object-cover transition-transform duration-300 hover:scale-105"
+                  className="z-10 animate-float rounded-lg object-contain"
                   data-ai-hint={heroPlaceholder.imageHint}
                 />
               )}
@@ -323,5 +326,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
