@@ -29,7 +29,7 @@ const InstagramIcon = () => (
     <defs>
       <radialGradient id="insta-gradient" r="150%" cx="30%" cy="107%">
         <stop stopColor="#fdf497" offset="0" />
-        <stop stopColor="#fdf497" offset="0.05" />
+        <stop stopColor="#fdf4-97" offset="0.05" />
         <stop stopColor="#fd5949" offset="0.45" />
         <stop stopColor="#d6249f" offset="0.6" />
         <stop stopColor="#285AEB" offset="0.9" />
@@ -91,16 +91,16 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto flex h-[300px] w-[300px] items-center justify-center md:h-[400px] md:w-[400px]">
+            <div className="relative mx-auto flex h-[350px] w-[350px] items-center justify-center md:h-[450px] md:w-[450px]">
               <div className="absolute inset-0 animate-fade-in-out-slow-1 rounded-full bg-gradient-to-tr from-yellow-500/30 to-amber-600/10 blur-3xl"></div>
               {heroPlaceholder && (
                 <Image
                   src={heroPlaceholder.imageUrl}
                   alt={heroPlaceholder.description}
-                  width={400}
-                  height={400}
+                  width={450}
+                  height={450}
                   priority
-                  className="z-10 rounded-full object-cover"
+                  className="z-10 rounded-xl object-cover"
                   data-ai-hint={heroPlaceholder.imageHint}
                 />
               )}
