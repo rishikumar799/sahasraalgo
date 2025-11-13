@@ -180,12 +180,13 @@ export default function Home() {
                 </p>
               </div>
               <div className="relative h-72 w-full md:h-96">
+                <div className="absolute inset-[-100px] rounded-full bg-primary/20 blur-[100px] animate-pulse-slow" />
                 {automatedTradePlaceholder && (
                   <Image
                     src={automatedTradePlaceholder.imageUrl}
                     alt={automatedTradePlaceholder.description}
                     fill
-                    className="rounded-xl object-cover shadow-2xl shadow-primary/10"
+                    className="z-10 rounded-xl object-cover shadow-2xl shadow-primary/10"
                     data-ai-hint={automatedTradePlaceholder.imageHint}
                   />
                 )}
@@ -196,12 +197,13 @@ export default function Home() {
           <div className="bg-gradient-to-b from-primary/90 via-yellow-600/90 to-amber-700/90 py-24 text-black md:py-32">
             <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16">
               <div className="relative order-last h-72 w-full md:order-first md:h-96">
+                <div className="absolute inset-[-100px] rounded-full bg-black/20 blur-[100px] animate-pulse-slow" />
                 {strategyPlaceholder && (
                   <Image
                     src={strategyPlaceholder.imageUrl}
                     alt={strategyPlaceholder.description}
                     fill
-                    className="rounded-xl object-cover shadow-2xl"
+                    className="z-10 rounded-xl object-cover shadow-2xl"
                     data-ai-hint={strategyPlaceholder.imageHint}
                   />
                 )}
@@ -227,12 +229,13 @@ export default function Home() {
                 </p>
               </div>
               <div className="relative h-72 w-full md:h-96">
+                <div className="absolute inset-[-100px] rounded-full bg-primary/20 blur-[100px] animate-pulse-slow" />
                 {lowLatencyPlaceholder && (
                   <Image
                     src={lowLatencyPlaceholder.imageUrl}
                     alt={lowLatencyPlaceholder.description}
                     fill
-                    className="rounded-xl object-cover shadow-2xl shadow-primary/10"
+                    className="z-10 rounded-xl object-cover shadow-2xl shadow-primary/10"
                     data-ai-hint={lowLatencyPlaceholder.imageHint}
                   />
                 )}
@@ -243,12 +246,13 @@ export default function Home() {
           <div className="bg-gradient-to-b from-primary/90 via-yellow-600/90 to-amber-700/90 py-24 text-black md:py-32">
             <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16">
               <div className="relative order-last h-72 w-full md:order-first md:h-96">
+                <div className="absolute inset-[-100px] rounded-full bg-black/20 blur-[100px] animate-pulse-slow" />
                 {paperAutoTradePlaceholder && (
                   <Image
                     src={paperAutoTradePlaceholder.imageUrl}
                     alt={paperAutoTradePlaceholder.description}
                     fill
-                    className="rounded-xl object-cover shadow-2xl"
+                    className="z-10 rounded-xl object-cover shadow-2xl"
                     data-ai-hint={paperAutoTradePlaceholder.imageHint}
                   />
                 )}
