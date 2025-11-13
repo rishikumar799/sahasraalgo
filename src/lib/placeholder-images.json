@@ -3,31 +3,31 @@
     {
       "id": "hero-chart",
       "description": "A glowing yellow stock chart on a dark background",
-      "imageUrl": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzdG9jayUyMGNoYXJ0fGVufDB8fHx8MTc2Mzk5NTM2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/Sahasra2.png?updatedAt=1763010914305",
       "imageHint": "stock chart"
     },
     {
       "id": "automated-trade",
       "description": "A person's hands typing on a futuristic/glowing keyboard with charts in the background.",
-      "imageUrl": "https://images.unsplash.com/photo-1592085198739-ffcad7f36b54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhdXRvbWF0ZWQlMjB0cmFkaW5nfGVufDB8fHx8MTc2Mjk1NTYzNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/Sahasra3.png?updatedAt=1763010914932",
       "imageHint": "automated trading"
     },
     {
       "id": "strategy",
       "description": "A person at a desk with multiple screens showing trading charts.",
-      "imageUrl": "https://images.unsplash.com/photo-1651340981821-b519ad14da7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmFkaW5nJTIwc3RyYXRlZ3l8ZW58MHx8fHwxNzYyOTU1NjM1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/Sahasra4.png?updatedAt=1763010914901",
       "imageHint": "trading strategy"
     },
     {
       "id": "low-latency",
       "description": "An abstract visualization of a high-speed network or data flow.",
-      "imageUrl": "https://images.unsplash.com/photo-1495592822108-9e6261896da8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkYXRhJTIwbmV0d29ya3xlbnwwfHx8fDE3NjI5NTE3OTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/Sahasra5.png?updatedAt=1763010915028",
       "imageHint": "data network"
     },
     {
       "id": "paper-auto-trade",
       "description": "A person analyzing charts and data on paper.",
-      "imageUrl": "https://images.unsplash.com/photo-1723987251277-18fc0a1effd0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhbmFseXppbmclMjBjaGFydHN8ZW58MHx8fHwxNzYyODk4MjM2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://ik.imagekit.io/7z0x3rycfi/sahasra/Sahasra6.png?updatedAt=1763010914924",
       "imageHint": "analyzing charts"
     },
     {
