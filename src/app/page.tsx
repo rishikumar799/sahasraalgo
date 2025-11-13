@@ -91,14 +91,14 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto flex h-[500px] w-[500px] items-center justify-center">
+            <div className="relative mx-auto flex h-[550px] w-[550px] items-center justify-center">
               <div className="absolute inset-0 animate-fade-in-out-slow-1 rounded-full bg-gradient-to-tr from-yellow-500/30 to-amber-600/10 blur-3xl"></div>
               {heroPlaceholder && (
                 <Image
                   src={heroPlaceholder.imageUrl}
                   alt={heroPlaceholder.description}
-                  width={500}
-                  height={500}
+                  width={550}
+                  height={550}
                   priority
                   className="z-10 rounded-xl object-cover"
                   data-ai-hint={heroPlaceholder.imageHint}
@@ -269,8 +269,8 @@ export default function Home() {
                       </Button>
 
                       <div className="mt-10 flex items-center justify-center gap-6 md:justify-start">
-                        <Link href="https://www.instagram.com/sahasra_trading?igsh=MTljOGpxZThoNWxxZg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                          <InstagramIcon />
+                        <Link href="https://www.instagram.com/sahasra_trading?igsh=MTljOGpxZThoNWxxZg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="transition-transform hover:scale-110">
+                           <Image src="/images/instagram.png" alt="Instagram" width={32} height={32} />
                         </Link>
                         <Link href="https://wa.me/919121004729" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="transition-transform hover:scale-110">
                            <Image src="/images/whatsapp.png" alt="WhatsApp" width={32} height={32} />
