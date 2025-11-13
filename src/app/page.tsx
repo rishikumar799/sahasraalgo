@@ -290,7 +290,7 @@ export default function Home() {
                     <div className="relative hidden h-72 w-full md:block md:h-96">
                       {communityPlaceholder && (
                         <Image
-                          src={communityPlaceholder.imageUrl}
+                          src="/images/community-graphic.png"
                           alt="A diverse group of people collaborating on a project, representing teamwork and community."
                           fill
                           className="rounded-lg object-cover"
