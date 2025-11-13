@@ -133,34 +133,6 @@ export default function Home() {
                   data-ai-hint={heroPlaceholder.imageHint}
                 />
               )}
-               <div className="absolute z-20 bottom-0 -left-20 w-max animate-float-very-slow hidden lg:block">
-                <div className="flex items-center gap-3 rounded-lg bg-black/50 p-3 backdrop-blur-md">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/20">
-                    <BarChartHorizontalBig className="h-5 w-5 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-bold text-white text-sm">Smarter decisions. Faster outcomes.</p>
-                  </div>
-                </div>
-              </div>
-               <div className="absolute z-20 top-0 -right-20 w-max animate-float-very-slow-reverse hidden lg:block">
-                <div className="flex items-center gap-3 rounded-lg bg-black/50 p-3 backdrop-blur-md">
-                  <div className="flex h-8 w-8 items-center justify-center rounded-full bg-primary/20">
-                    <Cpu className="h-5 w-5 text-primary" />
-                  </div>
-                  <div className="flex-1">
-                    <p className="font-bold text-white text-sm">Algorithmic Precision</p>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute z-20 -top-8 -left-16 w-max animate-float-very-slow-reverse hidden lg:block">
-                <div className="relative flex h-24 w-24 items-center justify-center">
-                  <Star className="absolute h-full w-full text-yellow-400" fill="currentColor" />
-                  <p className="relative z-10 text-center text-xs font-bold text-black">
-                    100% <br /> Trusted
-                  </p>
-                </div>
-              </div>
             </div>
           </div>
         </section>
