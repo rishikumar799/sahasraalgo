@@ -15,7 +15,7 @@ const communityPlaceholder = PlaceHolderImages.find((img) => img.id === 'communi
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-black">
+    <div className="flex min-h-screen flex-col bg-black overflow-hidden">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black/50 backdrop-blur-lg">
         <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between">
           <div className="flex">
@@ -299,3 +299,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
