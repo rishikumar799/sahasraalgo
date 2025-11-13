@@ -291,7 +291,7 @@ export default function Home() {
                       {communityPlaceholder && (
                         <Image
                           src="/images/community-graphic.png"
-                          alt="A diverse group of people collaborating on a project, representing teamwork and community."
+                          alt={communityPlaceholder.description}
                           fill
                           className="rounded-lg object-cover"
                           data-ai-hint={communityPlaceholder.imageHint}
