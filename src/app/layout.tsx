@@ -16,8 +16,46 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: 'Sahasra Algo',
-  description: 'AI-driven trading insights and automation.',
+  title: 'Sahasra Algo - Best Algo Trading Platform for Traders',
+  description:
+    'Unlock AI-powered trading with Sahasra Algo, the best platform for automated trading solutions. Get faster execution, smarter decisions, and better returns with our advanced algorithmic strategies.',
+  keywords: [
+    'Sahasra Algo',
+    'sahasra',
+    'best algo trading',
+    'algo trading',
+    'automated trading',
+    'AI trading',
+    'best algo trading platform',
+    'quantitative trading',
+    'trading bot',
+    'stock market',
+    'financial trading',
+  ],
+  openGraph: {
+    title: 'Sahasra Algo - Best Algo Trading Platform for Traders',
+    description:
+      'AI-powered trading made easy: faster execution, smarter decisions, better returns.',
+    url: 'https://sahasraalgo.com',
+    siteName: 'Sahasra Algo',
+    images: [
+      {
+        url: '/images/Sahasra2.png',
+        width: 1200,
+        height: 630,
+        alt: 'Sahasra Algo Trading Platform',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Sahasra Algo - Best Algo Trading Platform for Traders',
+    description:
+      'Unlock AI-powered trading with Sahasra Algo for faster execution, smarter decisions, and better returns.',
+    images: ['/images/Sahasra2.png'],
+  },
   icons: {
     icon: '/icon.png',
   },
