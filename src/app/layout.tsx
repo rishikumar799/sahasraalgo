@@ -18,6 +18,9 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Sahasra Algo',
   description: 'AI-driven trading insights and automation.',
+  icons: {
+    icon: '/icon.png',
+  },
 };
 
 export default function RootLayout({
