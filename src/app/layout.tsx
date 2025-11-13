@@ -31,11 +31,22 @@ export const metadata: Metadata = {
     'trading bot',
     'stock market',
     'financial trading',
+    'high-frequency trading',
+    'algorithmic trading strategies',
+    'automated stock trading',
+    'AI for finance',
   ],
+  authors: [{ name: 'Sahasra Algo' }],
+  creator: 'Sahasra Algo',
+  publisher: 'Sahasra Algo',
+  metadataBase: new URL('https://sahasraalgo.com'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
     title: 'Sahasra Algo - Best Algo Trading Platform for Traders',
     description:
-      'AI-powered trading made easy: faster execution, smarter decisions, better returns.',
+      'AI-powered trading made easy: faster execution, smarter decisions, better returns with Sahasra Algo.',
     url: 'https://sahasraalgo.com',
     siteName: 'Sahasra Algo',
     images: [
@@ -43,7 +54,7 @@ export const metadata: Metadata = {
         url: '/images/Sahasra2.png',
         width: 1200,
         height: 630,
-        alt: 'Sahasra Algo Trading Platform',
+        alt: 'Sahasra Algo Trading Platform banner',
       },
     ],
     locale: 'en_US',
@@ -54,10 +65,27 @@ export const metadata: Metadata = {
     title: 'Sahasra Algo - Best Algo Trading Platform for Traders',
     description:
       'Unlock AI-powered trading with Sahasra Algo for faster execution, smarter decisions, and better returns.',
-    images: ['/images/Sahasra2.png'],
+    creator: '@SahasraAlgo',
+    images: {
+      url: '/images/Sahasra2.png',
+      alt: 'Sahasra Algo logo and promotional image',
+    },
   },
   icons: {
     icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
