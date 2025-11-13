@@ -91,7 +91,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto flex h-[350px] w-[350px] items-center justify-center md:h-[450px] md:w-[450px]">
+            <div className="relative mx-auto flex h-[450px] w-[450px] items-center justify-center">
               <div className="absolute inset-0 animate-fade-in-out-slow-1 rounded-full bg-gradient-to-tr from-yellow-500/30 to-amber-600/10 blur-3xl"></div>
               {heroPlaceholder && (
                 <Image
