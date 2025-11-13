@@ -212,7 +212,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="community" className="w-full bg-background py-24 md:py-32">
+        <section id="community" className="w-full bg-black py-24 md:py-32 overflow-hidden">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-center font-headline text-3xl font-bold text-white sm:text-4xl md:text-5xl">
               Join Our Community
