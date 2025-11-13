@@ -5,7 +5,7 @@ export default function Logo({ className }: { className?: string }) {
   return (
     <div className={cn('flex items-center gap-3', className)}>
       <Image
-        src="/sahasralogo.png"
+        src="/images/sahasralogo.png"
         alt="Sahasra Algo Logo"
         width={140}
         height={40}
