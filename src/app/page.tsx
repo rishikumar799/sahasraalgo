@@ -15,7 +15,7 @@ const communityPlaceholder = PlaceHolderImages.find((img) => img.id === 'communi
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-black overflow-hidden">
+    <div className="flex min-h-screen flex-col bg-black">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black/50 backdrop-blur-lg">
         <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between">
           <div className="flex">
@@ -63,7 +63,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto flex items-center justify-center h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] md:h-[450px] md:w-[450px] lg:h-[550px] lg:w-[550px]">
+            <div className="relative mx-auto flex h-[300px] w-[300px] items-center justify-center sm:h-[400px] sm:w-[400px] md:h-[450px] md:w-[450px] lg:h-[550px] lg:w-[550px]">
               <div className="absolute inset-0 animate-fade-in-out-slow-1 rounded-full bg-gradient-to-tr from-yellow-500/30 to-amber-600/10 blur-3xl"></div>
               {heroPlaceholder && (
                 <Image
@@ -299,5 +299,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
