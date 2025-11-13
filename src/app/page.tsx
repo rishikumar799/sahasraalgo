@@ -257,9 +257,10 @@ export default function Home() {
                       </p>
                       <Button
                         size="lg"
-                        className="mt-10 rounded-full bg-white text-black transition-transform hover:scale-105 hover:bg-neutral-200"
+                        asChild
+                        className="mt-10 rounded-full bg-gradient-to-b from-yellow-400 to-amber-600 font-bold text-black shadow-lg transition-transform hover:scale-105"
                       >
-                        JOIN US TODAY
+                        <Link href="https://terminal.sahasraalgo.com/">JOIN US TODAY</Link>
                       </Button>
 
                       <div className="mt-10 flex items-center justify-center gap-6 md:justify-start">
