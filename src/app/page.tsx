@@ -91,14 +91,16 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto h-[300px] w-full max-w-[450px] md:h-[400px] lg:h-[450px]">
+            <div className="relative mx-auto flex h-[300px] w-[300px] items-center justify-center md:h-[400px] md:w-[400px]">
+              <div className="absolute inset-0 animate-fade-in-out-slow-1 rounded-full bg-gradient-to-tr from-yellow-500/30 to-amber-600/10 blur-3xl"></div>
               {heroPlaceholder && (
                 <Image
                   src={heroPlaceholder.imageUrl}
                   alt={heroPlaceholder.description}
-                  fill
+                  width={400}
+                  height={400}
                   priority
-                  className="z-10 rounded-lg object-contain"
+                  className="z-10 rounded-full object-cover"
                   data-ai-hint={heroPlaceholder.imageHint}
                 />
               )}
