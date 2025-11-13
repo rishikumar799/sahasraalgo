@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: 'Sahasra Algo',
     images: [
       {
-        url: '/images/Sahasra2.png',
+        url: '/images/Sahasra2.png', // Must be an absolute URL
         width: 1200,
         height: 630,
         alt: 'Sahasra Algo Trading Platform banner',
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       'Unlock AI-powered trading with Sahasra Algo for faster execution, smarter decisions, and better returns.',
     creator: '@SahasraAlgo',
     images: {
-      url: '/images/Sahasra2.png',
+      url: '/images/Sahasra2.png', // Must be an absolute URL
       alt: 'Sahasra Algo logo and promotional image',
     },
   },
