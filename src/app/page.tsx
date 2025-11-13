@@ -13,24 +13,6 @@ const lowLatencyPlaceholder = PlaceHolderImages.find((img) => img.id === 'low-la
 const paperAutoTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'paper-auto-trade');
 const communityPlaceholder = PlaceHolderImages.find((img) => img.id === 'community');
 
-const YouTubeIcon = () => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="h-8 w-8 text-red-600 transition-transform hover:scale-110"
-  >
-    <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
-    <path d="m10 15 5-3-5-3z" />
-  </svg>
-);
-
 const InstagramIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -58,25 +40,6 @@ const InstagramIcon = () => (
     <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" stroke="url(#insta-gradient)" />
   </svg>
 );
-
-const WhatsAppIcon = () => (
-    <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className="h-8 w-8 text-green-500 transition-transform hover:scale-110"
-  >
-    <path d="M21 11.5A8.38 8.38 0 0 1 12.5 20a8.38 8.38 0 0 1-8.1-5.1A8.38 8.38 0 0 1 3.5 11.5c0-4.6 3.7-8.5 8.4-8.5h.1A8.38 8.38 0 0 1 21 11.5z"></path>
-    <path d="M15.4 14.3c-.4-.2-2.4-1.2-2.8-1.3-.4-.1-.7-.1-1 .1s-1 .1-1.3.4c-.2.2-.4.4-.6.5-.2.1-.4.2-.7.1-.3-.1-1.3-.5-2.5-1.5s-2-2.2-2-2.5c-.1-.3 0-.4.1-.5.1-.1.2-.2.4-.4.1-.1.2-.2.2-.3.1-.1 0-.2 0-.3s-1-2.4-1.4-3.2c-.4-.8-.8-.7-1.1-.7h-.2c-.3 0-.6 0-.9.1s-.8.4-1.2 1.1c-.5.7-.7 1.6-.7 2.6 0 1 .2 1.8.3 2.1.1.3.6 1.4 1.7 2.8s2.3 2.5 3.7 3.3c.5.2.9.4 1.2.5.3.1.6.1.8.1.3 0 .7-.1.9-.3.2-.2.9-1.1 1-1.3.1-.2.2-.2.4-.1.1 0 .6.3 1.1.5s.8.3.9.4c.1.1.2.2.3.2h.3c.4 0 .8-.1 1.1-.4.3-.3.3-.6.2-1z" fill="currentColor"></path>
-  </svg>
-);
-
 
 export default function Home() {
   return (
@@ -303,11 +266,11 @@ export default function Home() {
                         <Link href="https://www.instagram.com/sahasra_trading?igsh=MTljOGpxZThoNWxxZg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                           <InstagramIcon />
                         </Link>
-                        <Link href="https://wa.me/919121004729" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
-                          <WhatsAppIcon />
+                        <Link href="https://wa.me/919121004729" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="transition-transform hover:scale-110">
+                           <Image src="https://ik.imagekit.io/7z0x3rycfi/sahasra/whatsapp.png?updatedAt=1763011712720" alt="WhatsApp" width={32} height={32} />
                         </Link>
-                        <Link href="https://youtube.com/@sahasra-atradingcommunity824?si=cBxvuhXun9YnEk-g" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-                          <YouTubeIcon />
+                        <Link href="https://youtube.com/@sahasra-atradingcommunity824?si=cBxvuhXun9YnEk-g" target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="transition-transform hover:scale-110">
+                           <Image src="https://ik.imagekit.io/7z0x3rycfi/sahasra/youtube.png?updatedAt=1763011724131" alt="YouTube" width={32} height={32} />
                         </Link>
                       </div>
 
