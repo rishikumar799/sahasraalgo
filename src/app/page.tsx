@@ -72,10 +72,6 @@ export default function Home() {
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="left">
-                  <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-                  <SheetDescription className="sr-only">
-                    A list of links to navigate the site.
-                  </SheetDescription>
                   <div className="flex flex-col gap-6 p-6">
                     <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
                       <Logo />
@@ -155,15 +151,18 @@ export default function Home() {
             <div className="relative mx-auto flex h-[500px] w-[500px] items-center justify-center">
               <div className="absolute inset-0 animate-fade-in-out-slow-1 rounded-full bg-gradient-to-tr from-yellow-500/30 to-amber-600/10 blur-3xl"></div>
               {heroPlaceholder && (
-                <Image
-                  src={heroPlaceholder.imageUrl}
-                  alt={heroPlaceholder.description}
-                  width={500}
-                  height={500}
-                  priority
-                  className="z-10 rounded-xl object-cover h-[500px] w-[500px]"
-                  data-ai-hint={heroPlaceholder.imageHint}
-                />
+                 <div className="relative h-[500px] w-[500px] animate-float">
+                    <Image
+                      src={heroPlaceholder.imageUrl}
+                      alt={heroPlaceholder.description}
+                      width={500}
+                      height={500}
+                      priority
+                      className="z-10 rounded-xl object-cover h-full w-full opacity-90"
+                      data-ai-hint={heroPlaceholder.imageHint}
+                    />
+                    <div className="absolute inset-0 z-20 rounded-xl bg-gradient-to-tr from-yellow-400/20 to-amber-600/10 mix-blend-overlay"></div>
+                  </div>
               )}
             </div>
           </div>

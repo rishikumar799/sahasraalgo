@@ -113,6 +113,10 @@ export default {
           '0%, 100%': { opacity: '0.2' },
           '50%': { opacity: '0.3' },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
@@ -121,6 +125,7 @@ export default {
         'pulse-slow': 'pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'fade-in-out-slow-1': 'fade-in-out 8s ease-in-out infinite',
         'fade-in-out-slow-2': 'fade-in-out 8s ease-in-out infinite 4s',
+        'float': 'float 6s ease-in-out infinite',
       },
     },
   },
