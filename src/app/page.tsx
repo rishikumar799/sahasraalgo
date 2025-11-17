@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div className="flex min-h-screen flex-col bg-black overflow-x-hidden">
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black/80 backdrop-blur-sm">
+      <header className="fixed top-0 left-0 right-0 z-50 w-full border-b border-border/40 bg-black/80 backdrop-blur-sm">
         <div className="container mx-auto flex h-14 max-w-screen-2xl items-center justify-between">
           <div className="flex">
             <Link href="/" className="flex items-center space-x-2">
@@ -112,7 +112,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex-1">
+      <main className="flex-1 pt-14">
         <section className="relative w-full overflow-hidden bg-black py-16 md:py-20 lg:py-24">
           <div className="absolute inset-0 z-0">
             <div className="absolute left-1/4 top-0 h-72 w-72 animate-fade-in-out-slow-1 rounded-full bg-yellow-500/20 blur-[200px]"></div>
@@ -377,7 +377,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
-
-    
