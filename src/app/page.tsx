@@ -17,7 +17,7 @@ const strategyPlaceholder = PlaceHolderImages.find((img) => img.id === 'strategy
 const lowLatencyPlaceholder = PlaceHolderImages.find((img) => img.id === 'low-latency');
 const paperAutoTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'paper-auto-trade');
 const communityPlaceholder = PlaceHolderImages.find((img) => img.id === 'community');
-const backgroundPlaceholder = PlaceHolderImages.find((img) => img.id === 'community');
+const backgroundPlaceholder = PlaceHolderImages.find((img) => img.id === 'automated-trade');
 
 
 export default function Home() {
@@ -126,7 +126,7 @@ export default function Home() {
               alt="Background"
               fill
               className="object-cover opacity-20 z-0"
-              data-ai-hint="collaboration teamwork"
+              data-ai-hint="automated trading"
             />
           )}
           <div className="absolute inset-0 z-0">
