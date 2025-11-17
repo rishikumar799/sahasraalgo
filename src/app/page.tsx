@@ -1,11 +1,15 @@
 
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Logo from '@/components/logo';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, Phone, Menu } from 'lucide-react';
+import { useState } from 'react';
+import { Sheet, SheetContent, SheetTrigger, SheetClose } from '@/components/ui/sheet';
 
 const heroPlaceholder = PlaceHolderImages.find((img) => img.id === 'hero-chart');
 const automatedTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'automated-trade');
@@ -15,6 +19,8 @@ const paperAutoTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'pa
 const communityPlaceholder = PlaceHolderImages.find((img) => img.id === 'community');
 
 export default function Home() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <div className="flex min-h-screen flex-col bg-black overflow-x-hidden">
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-black/80 backdrop-blur-sm">
@@ -49,13 +55,59 @@ export default function Home() {
             </ul>
           </nav>
           <div className="flex items-center justify-end space-x-4">
-            <Button
+             <Button
               variant="default"
-              className="rounded-lg bg-gradient-to-b from-yellow-400 to-amber-600 px-6 py-2 text-xs font-bold text-black shadow-lg transition-transform hover:scale-105 sm:px-8 sm:py-3 sm:text-sm"
+              className="hidden sm:flex rounded-lg bg-gradient-to-b from-yellow-400 to-amber-600 px-6 py-2 text-xs font-bold text-black shadow-lg transition-transform hover:scale-105 sm:px-8 sm:py-3 sm:text-sm"
               asChild
             >
               <Link href="https://terminal.sahasraalgo.com/">LOGIN</Link>
             </Button>
+            <div className="md:hidden">
+               <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-6 w-6" />
+                    <span className="sr-only">Toggle navigation menu</span>
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="left">
+                  <div className="flex flex-col gap-6 p-6">
+                    <Link href="/" className="flex items-center space-x-2" onClick={() => setIsMobileMenuOpen(false)}>
+                      <Logo />
+                    </Link>
+                    <nav className="flex flex-col gap-4">
+                      <SheetClose asChild>
+                        <Link href="#" className="text-lg font-medium transition-colors hover:text-primary">
+                          Home
+                        </Link>
+                      </SheetClose>
+                       <SheetClose asChild>
+                         <Link href="#about" className="text-lg font-medium transition-colors hover:text-primary">
+                           About
+                         </Link>
+                       </SheetClose>
+                       <SheetClose asChild>
+                         <Link href="#features" className="text-lg font-medium transition-colors hover:text-primary">
+                           Features
+                         </Link>
+                       </SheetClose>
+                       <SheetClose asChild>
+                         <Link href="#community" className="text-lg font-medium transition-colors hover:text-primary">
+                           Contact Us
+                         </Link>
+                       </SheetClose>
+                    </nav>
+                     <Button
+                        variant="default"
+                        className="w-full rounded-lg bg-gradient-to-b from-yellow-400 to-amber-600 px-6 py-2 text-sm font-bold text-black shadow-lg transition-transform hover:scale-105"
+                        asChild
+                      >
+                        <Link href="https://terminal.sahasraalgo.com/">LOGIN</Link>
+                      </Button>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </header>
@@ -325,3 +377,5 @@ export default function Home() {
     </div>
   );
 }
+
+    
