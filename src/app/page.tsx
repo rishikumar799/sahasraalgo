@@ -118,12 +118,21 @@ export default function Home() {
 
       <main className="flex-1 pt-14">
         <section className="relative w-full overflow-hidden bg-black py-16 md:py-20 lg:py-24">
+          {heroPlaceholder && (
+            <Image
+              src={heroPlaceholder.imageUrl}
+              alt="Background"
+              fill
+              className="object-cover opacity-10 z-0"
+              data-ai-hint="background pattern"
+            />
+          )}
           <div className="absolute inset-0 z-0">
             <div className="absolute left-1/4 top-0 h-72 w-72 animate-fade-in-out-slow-1 rounded-full bg-yellow-500/20 blur-[200px]"></div>
             <div className="absolute bottom-0 right-1/4 h-72 w-72 animate-fade-in-out-slow-2 rounded-full bg-primary/20 blur-[200px]"></div>
           </div>
-          <div className="container mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
-            <div className="relative z-10 animate-fade-in-up text-center md:text-left">
+          <div className="container relative z-10 mx-auto grid grid-cols-1 items-center gap-12 px-4 md:grid-cols-2 md:gap-16 md:px-6">
+            <div className="animate-fade-in-up text-center md:text-left">
               <h1 className="font-headline text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 Best Algo Trading <br />
                 Platform for <br />
@@ -381,5 +390,3 @@ export default function Home() {
     </div>
   );
 }
-
-    
