@@ -158,10 +158,9 @@ export default function Home() {
                       width={500}
                       height={500}
                       priority
-                      className="z-10 rounded-xl object-cover h-full w-full opacity-90"
+                      className="z-10 rounded-xl object-cover h-full w-full"
                       data-ai-hint={heroPlaceholder.imageHint}
                     />
-                    <div className="absolute inset-0 z-20 rounded-xl bg-gradient-to-tr from-yellow-400/40 to-amber-600/20 mix-blend-overlay"></div>
                   </div>
               )}
             </div>
