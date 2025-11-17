@@ -17,7 +17,6 @@ const strategyPlaceholder = PlaceHolderImages.find((img) => img.id === 'strategy
 const lowLatencyPlaceholder = PlaceHolderImages.find((img) => img.id === 'low-latency');
 const paperAutoTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'paper-auto-trade');
 const communityPlaceholder = PlaceHolderImages.find((img) => img.id === 'community');
-const backgroundPlaceholder = PlaceHolderImages.find((img) => img.id === 'automated-trade');
 
 
 export default function Home() {
@@ -120,15 +119,13 @@ export default function Home() {
 
       <main className="flex-1 pt-14">
         <section className="relative w-full overflow-hidden bg-black py-16 md:py-20 lg:py-24">
-          {backgroundPlaceholder && (
-            <Image
-              src={backgroundPlaceholder.imageUrl}
-              alt="Background"
-              fill
-              className="object-cover opacity-20 z-0"
-              data-ai-hint="automated trading"
-            />
-          )}
+          <Image
+            src="/images/27324.jpg"
+            alt="Background"
+            fill
+            className="object-cover opacity-20 z-0"
+            data-ai-hint="automated trading"
+          />
           <div className="absolute inset-0 z-0">
             <div className="absolute left-1/4 top-0 h-72 w-72 animate-fade-in-out-slow-1 rounded-full bg-yellow-500/20 blur-[200px]"></div>
             <div className="absolute bottom-0 right-1/4 h-72 w-72 animate-fade-in-out-slow-2 rounded-full bg-primary/20 blur-[200px]"></div>
