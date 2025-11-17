@@ -17,6 +17,8 @@ const strategyPlaceholder = PlaceHolderImages.find((img) => img.id === 'strategy
 const lowLatencyPlaceholder = PlaceHolderImages.find((img) => img.id === 'low-latency');
 const paperAutoTradePlaceholder = PlaceHolderImages.find((img) => img.id === 'paper-auto-trade');
 const communityPlaceholder = PlaceHolderImages.find((img) => img.id === 'community');
+const backgroundPlaceholder = PlaceHolderImages.find((img) => img.id === 'community');
+
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -118,13 +120,13 @@ export default function Home() {
 
       <main className="flex-1 pt-14">
         <section className="relative w-full overflow-hidden bg-black py-16 md:py-20 lg:py-24">
-          {heroPlaceholder && (
+          {backgroundPlaceholder && (
             <Image
-              src={heroPlaceholder.imageUrl}
+              src={backgroundPlaceholder.imageUrl}
               alt="Background"
               fill
-              className="object-cover opacity-10 z-0"
-              data-ai-hint="background pattern"
+              className="object-cover opacity-20 z-0"
+              data-ai-hint="collaboration teamwork"
             />
           )}
           <div className="absolute inset-0 z-0">
