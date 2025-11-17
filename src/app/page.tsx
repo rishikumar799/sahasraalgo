@@ -77,22 +77,22 @@ export default function Home() {
                     </Link>
                     <nav className="flex flex-col gap-4">
                       <SheetClose asChild>
-                        <Link href="#" className="text-lg font-medium transition-colors hover:text-primary">
+                        <Link href="#" className="text-lg font-medium transition-colors hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                           Home
                         </Link>
                       </SheetClose>
                        <SheetClose asChild>
-                         <Link href="#about" className="text-lg font-medium transition-colors hover:text-primary">
+                         <Link href="#about" className="text-lg font-medium transition-colors hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                            About
                          </Link>
                        </SheetClose>
                        <SheetClose asChild>
-                         <Link href="#features" className="text-lg font-medium transition-colors hover:text-primary">
+                         <Link href="#features" className="text-lg font-medium transition-colors hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                            Features
                          </Link>
                        </SheetClose>
                        <SheetClose asChild>
-                         <Link href="#community" className="text-lg font-medium transition-colors hover:text-primary">
+                         <Link href="#community" className="text-lg font-medium transition-colors hover:text-primary" onClick={() => setIsMobileMenuOpen(false)}>
                            Contact Us
                          </Link>
                        </SheetClose>
@@ -377,5 +377,7 @@ export default function Home() {
     </div>
   );
 }
+
+    
 
     
