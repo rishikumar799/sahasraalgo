@@ -123,7 +123,7 @@ export default function Home() {
             src="/images/27324.jpg"
             alt="Background"
             fill
-            className="object-cover opacity-20 z-0"
+            className="object-cover opacity-20 z-0 transform scale-x-[-1]"
             data-ai-hint="automated trading"
           />
           <div className="absolute inset-0 z-0">
